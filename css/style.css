@@ -15,7 +15,9 @@ body {
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
     cursor: url(../img/cursor.png), auto;
 }
-
+a, button {
+    cursor: url(../img/pointer.png), pointer;
+}
 /* header */
 header {
     display: flex;
@@ -51,7 +53,7 @@ header .gnb {
 header .gnb li {
     position: relative;
 }
-
+.gnb li > a {display: block;}
 header .gnb li:before {
     content: '';
     position: absolute;
@@ -85,7 +87,7 @@ header .gnb li:hover:before {
     transition: opacity 0.3s ease;
     z-index: 999;
 }
-
+.gnb li .depth li > a {display: block;}
 .gnb li .depth.on {
     opacity: 1;
     display: inline-block;
