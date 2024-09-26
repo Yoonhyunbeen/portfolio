@@ -1,0 +1,519 @@
+@charset "utf-8";
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+/*  font-family: 'Spoqa Han Sans Neo', 'sans-serif'; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Montserrat", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Halant", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
+/* font-family: "Yeseva One", serif; */
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    background: #FAFAFA;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    cursor: url(../img/cursor.png), auto;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 0 0;
+    padding: 5px 20px;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+    background: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    width: 90%;
+    z-index: 999;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header > h1 > a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+header .gnb {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    text-align: center;
+    line-height: 2.5;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+header .gnb li {
+    position: relative;
+}
+
+header .gnb li:before {
+    content: '';
+    position: absolute;
+    background: #000;
+    height: 1px;
+    width: 0%;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s;
+}
+
+header .gnb li:hover:before {
+    width: 100%;
+}
+
+/* depth */
+.gnb li .depth {
+    background: white;
+    display: none;
+    opacity: 0;
+    padding: 10px 25px;
+    line-height: 2.5;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 1px solid #000;
+    border-top: transparent;
+    position: absolute;
+    top: 46px;
+    left: -30%;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+}
+
+.gnb li .depth.on {
+    opacity: 1;
+    display: inline-block;
+}
+
+.gnb li .depth li:before {
+    content: '';
+    position: absolute;
+    background: #000;
+    height: 1px;
+    width: 0%;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s;
+}
+
+.gnb li .depth li:hover:before {
+    width: 100%;
+}
+
+
+/* main */
+#main {
+    width: 90%;
+    background: url(../img/bg.png) no-repeat center / contain;
+    height: 100vh;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.9);
+    margin: 0 auto;
+}
+
+#main .title {
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#main .title span {
+    display: none;
+}
+
+#main .title .subtxt {
+    font-family: "Halant", serif;
+    font-weight: 300;
+    font-size: 54px;
+    position: relative;
+    left: -300px;
+}
+
+#main .title .maintxt > span {
+    font-weight: 400;
+}
+
+#main .title .maintxt {
+    font-family: "Halant", serif;
+    font-weight: 500;
+    font-size: 62px;
+    position: relative;
+}
+
+#main .title .maintxt:before {
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, 0.9);
+    height: 1px;
+    width: 130%;
+    bottom: 10px;
+    transition: all 0.3s;
+}
+
+/* about */
+#about {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0x 0 70px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#about figure {
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 130px;
+    transform: translateY(-50%);
+}
+
+#about figure img {
+    max-width: 100%;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#about ul {
+    width: 45%;
+    position: absolute;
+    right: 130px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#about ul li {
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+#about ul li:last-child {
+    margin-bottom: 0;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    position: relative;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400;
+    display: inline-block;
+}
+
+h3:before {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    height: 1px;
+    width: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s;
+}
+
+#about ul li > h1 {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#about ul li > p {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400;
+}
+
+#about ul li > button {
+    padding: 5px 20px;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    color: rgba(0, 0, 0);
+    font-weight: 400;
+    margin: 0 3px 15px 0px;
+}
+
+/* project */
+#project {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#project h3 {
+    display: inline-block;
+    margin: 0 auto 60px;
+}
+
+#project #contwrap_web .content {
+    display: flex;
+    justify-content: space-between;
+    width: 71%;
+    margin: 0 auto 130px;
+}
+
+#project #contwrap_web .content .imgarea {
+    position: relative;
+}
+
+#project #contwrap_web .content .imgarea > a img {
+    width: 540px;
+    height: 290px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#project #contwrap_web .content .imgarea > a img:hover {
+    filter: brightness(1.2);
+    transition: all 0.2s;
+}
+
+#project #contwrap_web .content .imgarea .box {
+    width: 540px;
+    height: 290px;
+    border-radius: 30px;
+    background: #d9d9d9;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    z-index: -1;
+}
+
+#project #contwrap_web .content .text {
+    text-align: left;
+    line-height: 2;
+    margin: auto 0;
+    width: 42%;
+}
+
+#project #contwrap_web .content .text .title {
+    font-family: "Halant", serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+#project #contwrap_web .content .text > p {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#project #contwrap_web .content .text > span {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 300;
+    margin-bottom: 30px;
+    display: block;
+}
+
+#project #contwrap_web .content .text > span > strong {
+    font-weight: 400;
+}
+
+#project #contwrap_web .content .text .btnarea > button {
+    width: 170px;
+    margin-right: 15px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    background: #414141;
+    color: white;
+}
+
+#project #contwrap_web .content .text .btnarea > button:hover {
+    text-decoration: underline;
+}
+
+#project #contwrap_web .content .text .btnarea > button+button {
+    background: white;
+    color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#project #contwrap_web .content .text .btnarea > button+button:hover {
+    text-decoration: underline;
+}
+
+/* design */
+#project #contwrap_design > a img {
+    width: 990px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    display: block;
+    margin: 0 auto;
+}
+
+#project #contwrap_design > a img:hover {
+    filter: brightness(1.2);
+    transition: all 0.2s;
+}
+
+#project #contwrap_design > .textarea {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin: 20px auto;
+}
+
+#project #contwrap_design .text {
+    text-align: left;
+    line-height: 2;
+}
+
+#project #contwrap_design .text .title {
+    font-family: "Halant", serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+#project #contwrap_design .text > p {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#project #contwrap_design .text > span {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 300;
+    margin-bottom: 30px;
+    display: block;
+}
+
+#project #contwrap_design .text > span > strong {
+    font-weight: 400;
+}
+
+#project #contwrap_design .textarea > button {
+    width: 170px;
+    margin: auto 15px auto 0;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    background: #414141;
+    color: white;
+}
+
+#project .textarea > button:hover {
+    text-decoration: underline;
+}
+
+.imgarea {position: relative;}
+.swiper {
+    margin-top: 50px;
+    width: 990px;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+.swiper-slide .title {
+    position: absolute;
+    bottom: 0;
+    width: 477px;
+    padding: 40px 0;
+    color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.8));
+}
+.swiper-slide .title h4 {
+    font-family: "Halant", serif;
+    font-size: 20px;
+}
+.swiper-slide .title span {font-weight: 300;}
+.swiper-slide .title span strong {
+    font-weight: 400;
+}
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-button-next {
+    color: rgba(65, 65, 65, 0.5);
+}
+
+.swiper-button-prev {
+    color: rgba(65, 65, 65, 0.5);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* footer */
+footer {
+    background: #414141;
+    width: 100%;
+    height: 70vh;
+    margin-top: 130px;
+    text-align: center;
+    color: #fff;
+    padding: 150px 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer h3 {
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+footer h3:before {
+    background: #fff;
+}
+
+footer > p {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+footer span {
+    margin-bottom: 40px;
+    display: block;
+}
+
+footer .mail {
+    display: flex;
+    margin: 0 auto 100px;
+    justify-content: space-between;
+    width: 16%;
+}
+
+footer .mail > a {
+    font-size: 20px;
+    line-height: 2;
+}
+
+footer em {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-weight: 300;
+}
