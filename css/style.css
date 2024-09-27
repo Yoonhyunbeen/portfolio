@@ -151,16 +151,6 @@ header .gnb li:hover:before {
     position: relative;
 }
 
-#main .title .maintxt:before {
-    position: absolute;
-    content: '';
-    background: rgba(0, 0, 0, 0.9);
-    height: 1px;
-    width: 130%;
-    bottom: 10px;
-    transition: all 0.3s;
-}
-
 /* about */
 #about {
     width: 90%;

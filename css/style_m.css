@@ -49,6 +49,7 @@ h3 {
     margin: 0 3px 15px 0px;
 }
 /* project */
+#project {padding-top: 100px;}
 #project #contwrap_web .content {
     display: block;
     width: 100%;
@@ -95,7 +96,7 @@ h3 {
     width: 160px;
     font-size: 16px;
 }
-
+#project #contwrap_design {padding-top: 100px;}
 #project #contwrap_design > a img {
     width: 650px;
 }
@@ -157,7 +158,7 @@ h3 {
         text-align: center;
     }
     #about ul li > h1 {font-size: 20px;}
-
+    #project {padding-top: 200px;}
     #project #contwrap_web .content .imgarea > a img {
         width: 100%;
         height: 100%;
