@@ -5,8 +5,6 @@
 /* font-family: "Montserrat", sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* font-family: "Halant", serif; */
-@import url('https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
-/* font-family: "Yeseva One", serif; */
 
 body {
     margin: 0 auto;
@@ -15,7 +13,7 @@ body {
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
     cursor: url(../img/cursor.png), auto;
 }
-a, button {
+li > a, button, a {
     cursor: url(../img/pointer.png), pointer;
 }
 /* header */
@@ -28,7 +26,7 @@ header {
     border-bottom: 1px solid #000;
     background: rgba(255, 255, 255, 0.5);
     position: fixed;
-    width: 90%;
+    width: 90%; height: 40px;
     z-index: 999;
     top: 0;
     left: 50%;
@@ -38,6 +36,7 @@ header {
 header > h1 > a {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
+    display: block;
 }
 
 header .gnb {
@@ -80,9 +79,9 @@ header .gnb li:hover:before {
     text-align: center;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border: 1px solid #000;
-    border-top: transparent;
+    border-radius: 20px;
     position: absolute;
-    top: 46px;
+    top: 55px; 
     left: -30%;
     transition: opacity 0.3s ease;
     z-index: 999;
@@ -118,6 +117,7 @@ header .gnb li:hover:before {
     text-align: center;
     color: rgba(0, 0, 0, 0.9);
     margin: 0 auto;
+    display: block;
 }
 
 #main .title {
@@ -164,9 +164,9 @@ header .gnb li:hover:before {
 /* about */
 #about {
     width: 90%;
-    height: 100vh;
+    height: calc(100vh - 60px);
     margin: 0 auto;
-    padding: 0x 0 70px;
+    padding: 0 0 70px;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -235,7 +235,8 @@ h3:before {
     font-weight: 400;
 }
 
-#about ul li > button {
+#about ul li > span {
+    display: inline-block;
     padding: 5px 20px;
     background: white;
     border-radius: 20px;
@@ -249,8 +250,10 @@ h3:before {
 /* project */
 #project {
     width: 90%;
+    padding-top: 150px;
     margin: 0 auto;
     text-align: center;
+    display: block;
 }
 
 #project h3 {
@@ -264,9 +267,23 @@ h3:before {
     width: 71%;
     margin: 0 auto 130px;
 }
-
+#project #contwrap_web .content.right .imgarea {
+    position: absolute;
+    right: 0;
+    transform: translateX(-50%);
+}
 #project #contwrap_web .content .imgarea {
     position: relative;
+}
+
+#project #contwrap_web .content .imgarea:before {
+    content: '';
+    position: absolute;
+    width: 540px; height: 290px;
+    border-radius: 30px;
+    background: #d9d9d9;
+    left: 30px; top: 30px;
+    z-index: -1;
 }
 
 #project #contwrap_web .content .imgarea > a img {
@@ -279,17 +296,6 @@ h3:before {
 #project #contwrap_web .content .imgarea > a img:hover {
     filter: brightness(1.2);
     transition: all 0.2s;
-}
-
-#project #contwrap_web .content .imgarea .box {
-    width: 540px;
-    height: 290px;
-    border-radius: 30px;
-    background: #d9d9d9;
-    position: absolute;
-    left: 25px;
-    top: 25px;
-    z-index: -1;
 }
 
 #project #contwrap_web .content .text {
@@ -349,6 +355,7 @@ h3:before {
 }
 
 /* design */
+#project #contwrap_design {padding-top: 150px;}
 #project #contwrap_design > a img {
     width: 990px;
     border-radius: 30px;
@@ -399,18 +406,32 @@ h3:before {
     font-weight: 400;
 }
 
-#project #contwrap_design .textarea > button {
+#project #contwrap_design .btnarea {
+    margin: auto 0;
+}
+
+#project #contwrap_design .btnarea > button {
     width: 170px;
     margin: auto 15px auto 0;
     height: 50px;
     font-size: 16px;
+    background: white;
+    color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+#project #contwrap_design .btnarea > button+button {
     border: none;
     background: #414141;
     color: white;
 }
-
-#project .textarea > button:hover {
+#project .btnarea > button:hover {
     text-decoration: underline;
+}
+#project .btnarea > button > a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
 }
 
 .imgarea {position: relative;}
@@ -468,6 +489,7 @@ h3:before {
 
 .swiper-pagination-bullet-active {
     background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.6);
 }
 
 /* footer */
@@ -508,10 +530,11 @@ footer .mail {
     justify-content: space-between;
     width: 16%;
 }
-
+footer .mail img {width: 32px; height: 32px;}
 footer .mail > a {
     font-size: 20px;
     line-height: 2;
+    display: block;
 }
 
 footer em {

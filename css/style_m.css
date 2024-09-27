@@ -1,0 +1,209 @@
+@charset "utf-8";
+/*----- tablet 481~768px */
+
+body {
+    padding: 0 30px;
+}
+header > h1 {
+    margin: 0 auto;
+}
+header .gnb {
+    display: none;
+}
+/* main */
+#main .title {
+    position: relative;
+}
+#main .title .subtxt {
+    left: -50px;
+    font-size: 44px;
+}
+#main .title .maintxt {
+    font-size: 48px;
+}
+#main .title .maintxt:before {
+    width: 105%;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* about */
+#about figure {
+    width: 300px;
+    left: 0;
+}
+#about ul {
+    right:  0px;
+}
+#about ul li {
+    margin-bottom: 20px
+}
+#about ul li > h1 {
+    font-size: 19px;
+}
+#about ul li > p {
+    font-size: 16px;
+}
+#about ul li > span {
+    padding: 5px 12px;
+    font-size: 16px;
+    margin: 0 3px 15px 0px;
+}
+/* project */
+#project #contwrap_web .content {
+    display: block;
+    width: 100%;
+}
+#project #contwrap_web .content .imgarea {
+    margin-bottom: 35px;
+}
+#project #contwrap_web .content .imgarea:before {
+    display: none;
+}
+#project #contwrap_web .content .imgarea > a img {
+    width: 650px;
+    height: 349px;
+}
+#project #contwrap_web .content.right .imgarea {
+    position: relative;
+    right: 0;
+    transform: translateX(0);
+}
+#project #contwrap_web .content .text {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+#project #contwrap_web .content .text .title {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+#project #contwrap_web .content .text > p {
+    font-size: 18px;
+    width: 65%;
+}
+#project #contwrap_web .content .text > span {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+#project #contwrap_web .content .text .btnarea {
+    position: absolute;
+    top: 15%; right: -3%;
+}
+#project #contwrap_web .content .text .btnarea > button {
+    display: block;
+    margin-bottom: 20px;
+    width: 160px;
+    font-size: 16px;
+}
+
+#project #contwrap_design > a img {
+    width: 650px;
+}
+#project #contwrap_design > .textarea {
+    width: 650px;
+}
+#project #contwrap_design .text {
+    width: 100%;
+}
+#project #contwrap_design .text .title {
+    font-size: 26px;
+}
+#project #contwrap_design .text > p {
+    font-size: 18px;
+}
+#project #contwrap_design .text > span {
+    font-size: 14px;
+}
+#project #contwrap_design .btnarea > button {
+    margin: 0 0 20px 0;
+}
+
+.swiper {
+    width: 650px;
+}
+.swiper-slide .title {
+    width: 312px;
+}
+
+/* footer */
+footer .mail {
+    width: 37%;
+}
+
+/*----- mobile ~480px */
+@media screen and (max-width: 480px) {
+
+    #about {
+        display: block;
+        margin-bottom: 100px;
+    }
+    #about figure {
+        left: 50%; top: 0;
+        transform: translateX(-50%);
+        display: block;
+    }
+    #about figure img {display: block;}
+    #about ul {
+        width: 100%;
+        display: block;
+        position: relative;
+        top: 420px; bottom: 0; right: 0;
+        transform: translateY(0);
+        text-align: center;
+    }
+    #about ul li > h1 {font-size: 20px;}
+
+    #project #contwrap_web .content .imgarea > a img {
+        width: 380px;
+        height: 204px;
+    }
+    #project #contwrap_web .content .text {
+        width: 100%;
+    }
+    #project #contwrap_web .content .text > p {
+        width: 100%;
+    }
+    #project #contwrap_web .content .imgarea {
+        margin-bottom: 15px;
+    }
+
+    #project #contwrap_web .content .text .btnarea {
+        position: static;
+        display: flex;
+        top: 0; right: 0;
+    }
+    #project #contwrap_web .content .text .btnarea > button {
+        display: block;
+        margin-bottom: 20px;
+        width: 50%;
+        font-size: 16px;
+    }
+
+
+    #project #contwrap_design > a img {
+        width: 100%;
+    }
+    #project #contwrap_design > .textarea {
+        width: 100%;
+        display: block;
+    }
+    #project #contwrap_design .btnarea > button {
+        width: 45%;
+    }
+    .swiper {
+        width: 100%;
+    }
+    .swiper-slide .title {
+        width: 174px;
+    }
+
+    footer .mail {
+        display: flex;
+        margin: 0 auto 100px;
+        justify-content: space-between;
+        width: 60%;
+    }
+}
