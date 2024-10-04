@@ -1,0 +1,542 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap'); 
+/* font-family: "Noto Sans KR", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+/* font-family: "Montserrat", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* font-family: "Playfair Display", serif; */
+
+body {font-family: "Noto Sans KR", sans-serif;}
+
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    color: white;
+    z-index: 10;
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+}
+header ul li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+header ul .left {
+    line-height: 2.5;
+}
+header ul .left .gnb_menu {
+    position: relative;
+    width: 33%;
+    display: block;
+    top: 10px;
+    cursor: pointer;
+    height: 40px; width: 40px;
+    margin-right: 40px;
+    top: 50%;
+    transform: translateY(-30%);
+}
+header ul .left .gnb_menu span {
+    position: absolute;
+    background: white;
+    height: 2px;
+    width: 70%;
+    top: 0%; left: 0;
+}
+header ul .left .gnb_menu span:nth-child(2) {
+    top: 10px;
+    width: 100%;
+}
+header ul .left .gnb_menu span:nth-child(3) {
+    top: 20px;
+    width: 60%;
+}
+header ul .left .search {
+    margin-right: 60px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-35%);
+}
+header ul .left .search:after {
+    content: '';
+    position: absolute;
+    background: url(../img/ico/ico_search.png) no-repeat center / contain;
+    width: 13px; height: 13px;
+    top: 12px; left: 60px;
+}
+header ul .left .lang {
+    position: relative;
+    font-weight: 400;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-35%);
+}
+header ul .left .lang span {
+    font-size: 8px; 
+    position: absolute;
+    bottom: 50%;
+    margin-left: 10px;
+}
+header .left .logo {
+    background: url(../img/logo/bg_logo_shinsegae_wh.png) no-repeat center / contain;
+    width: 350px; height: 60px;
+    display: block;
+    margin-right: 30px;
+}
+
+header .right {
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translateY(-50%);
+}
+header .right {
+    width: 33%;
+}
+header .right ul li {
+    width: 20%;
+    line-height: 2;
+}
+header .right ul li {position: relative;}
+header .right ul li a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .right ul li:last-child a {
+    border: 1px solid white;
+    display: inline-block;
+    padding: 5px 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+/* header white */
+header.white {
+    background: white;
+    color: black;
+    z-index: 21;
+}
+header.white ul .left .search:after {
+    background: url(../img/ico/ico_search_bk.png) no-repeat center / contain;
+}
+header.white .logo {
+    background: url(../img/logo/bg_logo_shinsegae.png) no-repeat center / contain;
+}
+header.white ul .left .gnb_menu span {
+    background: rgba(0,0,0,0.8);
+} 
+header.white .right ul li:last-child a {
+    border: 1px solid rgb(0, 0, 0);
+}
+/* menu */
+.menu.on {display: block;}
+.menu {
+    display: none;
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-color: #111111;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    z-index: 19;
+    word-break: keep-all;
+}
+.menu > .menuClose {
+    background: url(../img/ico/btn_close_white_25x25.png) no-repeat
+     center / contain;
+     width: 25px; height: 100px;
+     border: none;
+     position: absolute;
+     right: 50px; top: 20px;
+     cursor: pointer;
+}
+.menu > ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 14%;
+    margin: 80px 150px 0;
+    justify-content: space-between;
+}
+.menu > ul > li {
+    width: 14%;
+    margin-bottom: 20px;
+}
+.menu > ul > li > p {
+    color: #989434;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.menu > ul > li > .menuInner {
+    font-family: "Montserrat", "Noto Sans KR";
+}
+.menu > ul > li > .menuInner > li {
+    margin-bottom: 15px;
+}
+.menu > ul > li > .menuInner > .innerTitle {
+    font-weight: 500;
+    font-size: 18px;
+}
+.menu > ul > li > .menuInner > .subTitle {
+    font-weight: 300;
+    color: rgba(255,255,255,0.8);
+}
+.menu > ul > .lounge > ul > li a > img {
+    width: 175px;
+}
+.menu > ul > .lounge > ul > li a > p {
+    font-weight: 300;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 10px;
+}
+/* footer */
+footer {
+    height: 30vh;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 60px 100px;
+}
+footer .logo {
+    margin-bottom: 60px;
+}
+footer .logo a {
+    margin: 0 20px;
+}
+footer .btmArea {
+    display: flex;
+    justify-content: space-between;
+}
+footer .btmArea .center {
+    width: 55%;
+}
+footer .btmArea .center .category {
+    font-weight: 400;
+    font-size: 15px;
+    word-break: keep-all;
+    line-height: 2;
+    text-align: left;
+    margin: 0 auto 30px;
+}
+footer .btmArea .center .category a {
+    margin: 0 30px 0 0;
+}
+footer .btmArea .center .category > a span {
+    color: #989434;
+}
+footer .btmArea .center .info {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    text-align: left;
+    margin: 0 auto;
+}
+footer .btmArea .center .info p {
+    margin-bottom: 10px;
+}
+footer .btmArea .center .info p > span {
+    margin: 0 20px;
+    display: inline-block;
+}
+footer .btmArea .right {position: relative;}
+footer .btmArea .right button {
+    padding: 0 30px 5px 0;
+    text-align: left;
+    background: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    margin-bottom: 20px;
+    width: 230px;
+    cursor: pointer;
+}
+footer .btmArea .right button.on:after {
+    transform: rotate(-225deg);
+    top: 20%;
+}
+footer .btmArea .right button:after {
+    position: absolute;
+    right: 10px;
+    content: '';
+    width: 10px; height: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transform: rotate(-45deg);
+}
+footer .btmArea .right .familysite.on {display: block;}
+footer .btmArea .right .familysite {
+    display: none;
+    position: absolute;
+    bottom: 185px;
+    text-align: left;
+    background: black;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: white;
+    font-size: 12px;
+    width: 100%;
+    z-index: 20;
+}
+footer .btmArea .right .familysite li {
+    padding: 10px 20px;
+}
+footer .btmArea .right .familysite li:hover {
+    text-decoration: underline;
+}
+footer .btmArea .right .sns {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* main01 */
+a, a > button {cursor: pointer;}
+.main01 {
+    width: 100%;
+    background: white;
+    padding: 180px 0;
+    position: relative;
+    font-family: "Montserrat","Noto Sans KR";
+}
+.main01 .content {
+    width: 70%;
+    margin: 0 auto;
+}
+.titleArea {
+    color: #000;
+    margin-bottom: 70px;
+}
+.titleArea h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 56px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.titleArea > p {
+    line-height: 1.8;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.8);
+}
+.rewards {
+    position: relative;
+    margin-bottom: 70px;
+}
+.rewards .rewardsTitle {
+    color: #000;
+    position: relative;
+    margin-bottom: 20px;
+}
+.rewards .rewardsTitle::after {
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    background: #000;
+    height: 1px; width: 100%;
+}
+h3 {
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.rewards .rewardsTitle > p {
+    font-weight: 400;
+    color: rgba(0,0,0,0.8);
+    font-size: 18px;
+    line-height: 1.8;
+}
+.rewards .rewardsCont {
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.rewards .rewardsCont:after {
+    position: absolute;
+    content: '';
+    bottom: -10px; left: 0;
+    background: rgba(0,0,0,0.2);
+    height: 1px; width: 100%;
+}
+.rewards .rewardsCont > div > h4 {
+    font-family: "Playfair Display", serif;
+    color: #000;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.rewards .rewardsCont > div > span {
+    display: block;
+    margin-bottom: 10px;
+    color: rgba(0,0,0,0.6);
+    font-size: 18px;
+    font-weight: 400;
+}
+.rewards .rewardsCont .point {position: relative;}
+.rewards .rewardsCont .point > a {
+    position: absolute;
+    right: -40px; bottom: 10px;
+}
+.rewards .rewardsCont .point > a button {
+    background: none;
+    text-decoration: underline;
+    color: #000;
+    font-weight: 400;
+    border: none;
+}
+.rewards .rewardsCont > a {
+    margin: auto 0;
+}
+.rewards .rewardsCont > a button {
+    background: white;
+    border: 1px solid #000;
+    width: 200px; height: 60px;
+    font-size: 18px;
+}
+.vip .vipTitle {
+    margin-bottom: 30px;
+}
+.vip .vipTitle > p {
+    font-weight: 400;
+    color: rgba(0,0,0,0.8);
+    font-size: 18px;
+    line-height: 1.8;
+}
+.vip .vipCont .cardwrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.vip .vipCont .cardwrap .card .bg_gray {
+    background: #f8f8f8;
+    position: relative;
+    width: 235px; height: 1050px;
+    padding: 40px 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.vip .vipCont .cardwrap .card .bg_gray > span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    margin: 10px auto;
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+    font-weight: 500;
+}
+.vip .vipCont .cardwrap .card .bg_gray figure {
+    width: 200px;
+    margin: 40px auto;
+}
+.vip .vipCont .cardwrap .card .bg_gray figure > img {
+    max-width: 100%;
+}
+.vip .vipCont .cardwrap .card .bg_gray > h5 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.vip .vipCont .cardwrap .card .bg_gray > h6 {
+    font-family: "Playfair Display", serif;
+    color: #000;
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.vip .vipCont .cardwrap .card .bg_gray > h6 > span {
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.vip .vipCont .cardwrap .card .bg_gray > a button {
+    background: none;
+    font-weight: 400;
+    border: 1px solid rgba(0,0,0,0.2);
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 30px;
+}
+.vip .vipCont .cardwrap .card .bg_gray .cardInfo > strong {
+    color: #989434;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 15px;
+    display: block;
+}
+.vip .vipCont .cardwrap .card .bg_gray .cardInfo > ul {
+    margin-bottom: 30px;
+}
+.vip .vipCont .cardwrap .card .bg_gray .cardInfo > ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    word-break: keep-all;
+    font-weight: 400;
+    color: rgba(0,0,0,0.6);
+}
+.vip .vipCont .cardwrap .card .bg_gray .cardInfo > ul li:before {
+    position: absolute;
+    content: '';
+    background: #000;
+    left: 0;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+    width: 1px; height: 1px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.vip .vipCont .cardwrap .card > a button {
+    width: 100%;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.2);
+    color: rgba(0,0,0,0.6);
+    padding: 15px 0;
+    font-size: 16px;
+}
+.vip .vipCont .cardwrap .card:last-child > a button {
+    color: white;
+    background: #164438;
+}
+
+.btn_qna {
+    position: absolute;
+    bottom: 0; left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    position: relative;
+    border: 1px solid rgba(0,0,0);
+
+}
+.btn_qna > button {
+    position: relative;
+    background: black;
+    color: white;
+    border: none;
+    width: 190px; height: 60px;
+    font-size: 18px;
+}
+.btn_qna:hover {
+    border: 1px solid rgba(0,0,0);
+}
+.btn_qna:hover > button {
+    color: rgba(0,0,0,0.9);
+    background: white;
+    transition: all 0.5s;
+}
+
+
+
+/* font-family: "Montserrat", sans-serif; */
+/* font-family: "Playfair Display", serif; */

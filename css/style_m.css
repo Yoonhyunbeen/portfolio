@@ -97,32 +97,46 @@ h3 {
     font-size: 16px;
 }
 #project #contwrap_design {padding-top: 100px;}
-#project #contwrap_design > a img {
-    width: 650px;
-}
-#project #contwrap_design > .textarea {
-    width: 650px;
-}
-#project #contwrap_design .text {
+#project #contwrap_design > .design_muse {
     width: 100%;
 }
-#project #contwrap_design .text .title {
+#project #contwrap_design > .design_muse a img {
+    width: 100%;
+}
+#project #contwrap_design > .design_muse .textarea {
+    width: 100%;
+}
+#project #contwrap_design .design_muse .text {
+    width: 100%;
+}
+#project #contwrap_design .design_muse .text .title {
     font-size: 26px;
 }
-#project #contwrap_design .text > p {
+#project #contwrap_design .design_muse .text > p {
     font-size: 18px;
 }
-#project #contwrap_design .text > span {
+#project #contwrap_design .design_muse .text > span {
     font-size: 14px;
 }
-#project #contwrap_design .btnarea > button {
+#project #contwrap_design .design_muse .btnarea > button {
     margin: 0 0 20px 0;
 }
 
 .swiper {
-    width: 650px;
+    width: 100%;
 }
-
+.swiper-slide img {
+    width: 90%;
+    margin: 0 auto;
+}
+.swiper-slide .title {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+footer {
+    width: 100%;
+}
 
 /*----- mobile ~480px */
 @media screen and (max-width: 480px) {
@@ -186,19 +200,18 @@ h3 {
     }
 
     #project #contwrap_design {padding-top: 50px;}
-
-    #project #contwrap_design > a img {
+    #project #contwrap_design > .design_muse {width: 100%;}
+    #project #contwrap_design .design_muse > a img {
         width: 100%;
     }
-    #project #contwrap_design > .textarea {
+    #project #contwrap_design .design_muse > .textarea {
         width: 100%;
         display: block;
     }
-    #project #contwrap_design .btnarea > button {
+    #project #contwrap_design .design_muse .btnarea > button {
         width: 45%;
     }
     .swiper {
         width: 100%;
     }
-
 }

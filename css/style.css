@@ -11,11 +11,12 @@ body {
     padding: 0;
     background: #FAFAFA;
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-    cursor: url(../img/cursor.png), auto;
+   /*  cursor: url(../img/cursor.png), auto; */
+    word-break: keep-all;
 }
-li > a, button, a {
+/* li > a, button, a {
     cursor: url(../img/pointer.png), pointer;
-}
+} */
 /* header */
 header {
     display: flex;
@@ -229,12 +230,12 @@ h3:before {
     display: inline-block;
     padding: 5px 20px;
     background: white;
-    border-radius: 20px;
+    border-radius: 40px;
     border: 1px solid rgba(0, 0, 0, 0.8);
     font-size: 20px;
     color: rgba(0, 0, 0);
     font-weight: 400;
-    margin: 0 3px 15px 0px;
+    margin: 0 3px 20px 0px;
 }
 
 /* project */
@@ -308,7 +309,25 @@ h3:before {
     font-weight: 400;
     font-size: 20px;
 }
-
+#project #contwrap_web .content .text .page {
+    font-weight: 400;
+    display: block;
+    margin: 10px 0 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+#project #contwrap_web .content .text .page > a {
+   display: inline-block;
+   background: white;
+   line-height: 26px;
+   box-sizing: border-box;
+   padding: 3px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+}
+#project #contwrap_web .content .text .page > a:hover {
+    background: #ecd04c;
+}
 #project #contwrap_web .content .text > span {
     color: rgba(0, 0, 0, 0.6);
     font-weight: 300;
@@ -345,33 +364,40 @@ h3:before {
 }
 
 /* design */
-#project #contwrap_design {padding-top: 150px;}
-#project #contwrap_design > a img {
-    width: 990px;
+#project #contwrap_design {
+    padding-top: 150px;
+    position: relative;
+}
+#project #contwrap_design > .design_muse {
+    width: 50%;
+    margin: 0 auto;
+}
+#project #contwrap_design > .design_muse a img {
+    width: 100%;
     border-radius: 30px;
     border: 1px solid rgba(0, 0, 0, 0.8);
     display: block;
     margin: 0 auto;
 }
 
-#project #contwrap_design > a img:hover {
+#project #contwrap_design > .design_muse a img:hover {
     filter: brightness(1.2);
     transition: all 0.2s;
 }
 
-#project #contwrap_design > .textarea {
+#project #contwrap_design > .design_muse .textarea {
     display: flex;
     justify-content: space-between;
-    width: 900px;
+    width: 100%;
     margin: 20px auto;
 }
 
-#project #contwrap_design .text {
+#project #contwrap_design .design_muse .text {
     text-align: left;
     line-height: 2;
 }
 
-#project #contwrap_design .text .title {
+#project #contwrap_design .design_muse .text .title {
     font-family: "Halant", serif;
     font-size: 28px;
     font-weight: 600;
@@ -380,27 +406,27 @@ h3:before {
     line-height: 1.5;
 }
 
-#project #contwrap_design .text > p {
+#project #contwrap_design .design_muse .text > p {
     font-weight: 400;
     font-size: 20px;
 }
 
-#project #contwrap_design .text > span {
+#project #contwrap_design .design_muse .text > span {
     color: rgba(0, 0, 0, 0.6);
     font-weight: 300;
     margin-bottom: 30px;
     display: block;
 }
 
-#project #contwrap_design .text > span > strong {
+#project #contwrap_design .design_muse .text > span > strong {
     font-weight: 400;
 }
 
-#project #contwrap_design .btnarea {
+#project #contwrap_design .design_muse .btnarea {
     margin: auto 0;
 }
 
-#project #contwrap_design .btnarea > button {
+#project #contwrap_design .design_muse .btnarea > button {
     width: 170px;
     margin: auto 15px auto 0;
     height: 50px;
@@ -409,15 +435,15 @@ h3:before {
     color: rgba(0, 0, 0, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
 }
-#project #contwrap_design .btnarea > button+button {
+#project #contwrap_design .design_muse .btnarea > button+button {
     border: none;
     background: #414141;
     color: white;
 }
-#project .btnarea > button:hover {
+#project .design_muse .btnarea > button:hover {
     text-decoration: underline;
 }
-#project .btnarea > button > a {
+#project .design_muse .btnarea > button > a {
     display: block;
     height: 100%;
     width: 100%;
@@ -427,7 +453,7 @@ h3:before {
 .imgarea {position: relative;}
 .swiper {
     margin-top: 50px;
-    width: 990px;
+    width: 60%;
     height: 100%;
 }
 .swiper-slide {
@@ -439,17 +465,22 @@ h3:before {
     align-items: center;
     position: relative;
 }
+.swiper-slide a {
+    position: relative;
+}
 .swiper-slide img {
     display: block;
-    width: 100%; height: 100%;
+    width: 90%; height: 100%;
+    margin: 0 auto;
     object-fit: cover;
     border-radius: 30px;
     border: 1px solid rgba(0, 0, 0, 0.8);
 }
 .swiper-slide .title {
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    bottom: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
     padding: 40px 0;
     color: white;
     border-bottom-left-radius: 30px;
@@ -468,15 +499,22 @@ h3:before {
     margin-left: auto;
     margin-right: auto;
 }
-
 .swiper-button-next {
-    color: rgba(65, 65, 65, 0.5);
+    background: url(../img/btn_swipe_right.png) no-repeat center / contain;
+    width: 66px; height: 66px;
 }
-
 .swiper-button-prev {
-    color: rgba(65, 65, 65, 0.5);
+    background: url(../img/btn_swipe_left.png) no-repeat center / contain;
+    width: 66px; height: 66px;
 }
-
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    display: none;
+}
+.swiper-pagination {
+    position: absolute;
+    bottom: 100px;
+}
 .swiper-pagination-bullet-active {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.6);
@@ -484,43 +522,47 @@ h3:before {
 
 /* footer */
 footer {
+    position: relative;
     background: #414141;
     width: 100%;
     margin-top: 130px;
     text-align: center;
     color: #fff;
-    padding: 150px 0;
+    padding: 100px 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
 
 footer h3 {
     color: #fff;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 footer h3:before {
     background: #fff;
 }
 
-footer > p {
+footer .textArea p {
     font-size: 30px;
     margin-bottom: 40px;
 }
 
-footer span {
+footer .textArea span {
     margin-bottom: 40px;
     display: block;
 }
 
 footer .mail {
-    margin: 0 auto 100px;
+    margin: 0 auto 40px;
     font-size: 20px;
     line-height: 2;
     display: block;
 }
 
 footer em {
+    position: absolute;
+    bottom: 40px; left: 50%;
+    transform: translateX(-50%);
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     font-weight: 300;

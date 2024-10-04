@@ -1,0 +1,1202 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap'); 
+/* font-family: "Noto Sans KR", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+/* font-family: "Montserrat", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* font-family: "Playfair Display", serif; */
+
+body {font-family: "Noto Sans KR", sans-serif;}
+
+/* header */
+
+header {
+    position: absolute;
+    width: 100%;
+    color: white;
+    z-index: 10;
+}
+header ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+}
+header ul li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+header ul .left {
+    line-height: 2.5;
+}
+header ul .left .gnb_menu {
+    position: relative;
+    width: 33%;
+    display: block;
+    top: 10px;
+    cursor: pointer;
+    height: 40px; width: 40px;
+    margin-right: 40px;
+    transition: transform 0.3s;
+}
+header ul .left .gnb_menu.on {
+    transform: rotate(45deg);
+}
+header ul .left .gnb_menu span {
+    position: absolute;
+    background: white;
+    height: 2px;
+    width: 70%;
+    top: 0; left: 0;
+}
+header ul .left .gnb_menu span:nth-child(2) {
+    top: 10px;
+    width: 100%;
+}
+header ul .left .gnb_menu span:nth-child(3) {
+    top: 20px;
+    width: 60%;
+}
+header ul .left .search {
+    margin-right: 60px;
+    position: relative;
+}
+header ul .left .search:after {
+    content: '';
+    position: absolute;
+    background: url(../img/ico/ico_search.png) no-repeat center / contain;
+    width: 13px; height: 13px;
+    top: 12px; left: 60px;
+}
+header ul .left .lang {
+    position: relative; 
+    font-weight: 400;
+    cursor: pointer;
+}
+header ul .left .lang span {
+    margin-left: 15px;
+    font-size: 8px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .logo {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../img/logo/bg_logo_shinsegae_wh.png) no-repeat center / contain;
+    width: 350px; height: 60px;
+}
+header .logo a {
+    display: block;
+    width: 350px; height: 60px;
+}
+header .right {
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translateY(-50%);
+}
+header .right {
+    width: 33%;
+}
+header .right ul li {
+    width: 20%;
+    line-height: 2;
+}
+header .right ul li {position: relative;}
+header .right ul li a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .right ul li:last-child a {
+    border: 1px solid white;
+    display: inline-block;
+    padding: 5px 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+/* header white */
+header.white {
+    background: white;
+    color: black;
+    z-index: 21;
+}
+header.white ul .left .search:after {
+    background: url(../img/ico/ico_search_bk.png) no-repeat center / contain;
+}
+header.white .logo {
+    background: url(../img/logo/bg_logo_shinsegae.png) no-repeat center / contain;
+}
+header.white ul .left .gnb_menu span {
+    background: rgba(0,0,0,0.8);
+} 
+header.white .right ul li:last-child a {
+    border: 1px solid rgb(0, 0, 0);
+}
+/* header clone */
+.header_white {
+    position: fixed;
+    width: 100%;
+    color: black;
+    background: white;
+    z-index: 21;
+}
+.header_white ul {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+}
+.header_white ul li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.header_white ul .left {
+    line-height: 2.5;
+}
+.header_white ul .left .gnb_menu {
+    position: relative;
+    width: 33%;
+    display: block;
+    top: 10px;
+    cursor: pointer;
+    height: 40px; width: 40px;
+    margin-right: 40px;
+    transition: transform 0.3s;
+}
+header ul .left .gnb_menu.on {
+    transform: rotate(45deg);
+}
+.header_white ul .left .gnb_menu span {
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    height: 2px;
+    width: 70%;
+    top: 0; left: 0;
+}
+.header_white ul .left .gnb_menu span:nth-child(2) {
+    top: 10px;
+    width: 100%;
+}
+.header_white ul .left .gnb_menu span:nth-child(3) {
+    top: 20px;
+    width: 60%;
+}
+.header_white ul .left .search {
+    margin-right: 60px;
+    position: relative;
+}
+.header_white ul .left .search:after {
+    content: '';
+    position: absolute;
+    background: url(../img/ico/ico_search_bk.png) no-repeat center / contain;
+    width: 13px; height: 13px;
+    top: 12px; left: 60px;
+}
+.header_white ul .left .lang {
+    position: relative; 
+    font-weight: 400;
+    cursor: pointer;
+}
+.header_white ul .left .lang span {
+    margin-left: 15px;
+    font-size: 8px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header_white .logo {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../img/logo/bg_logo_shinsegae.png) no-repeat center / contain;
+    width: 350px; height: 60px;
+}
+.header_white .logo a {
+    display: block;
+    width: 350px; height: 60px;
+}
+.header_white .right {
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translateY(-50%);
+}
+.header_white .right {
+    width: 33%;
+}
+.header_white .right ul li {
+    width: 20%;
+    line-height: 2;
+}
+.header_white .right ul li {position: relative;}
+.header_white .right ul li a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header_white .right ul li:last-child a {
+    border: 1px solid rgb(0, 0, 0);
+    display: inline-block;
+    padding: 5px 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+.header_white.on {
+    top: 0;
+}
+/* menu */
+.menu.on {display: block;}
+.menu {
+    display: none;
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-color: #111111;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    z-index: 19;
+    word-break: keep-all;
+}
+.menu > .menuClose {
+    background: url(../img/ico/btn_close_white_25x25.png) no-repeat
+     center / contain;
+     width: 25px; height: 25px;
+     border: none;
+     position: absolute;
+     right: 50px; top: 40px;
+     cursor: pointer;
+}
+.menu > ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 14%;
+    margin: 50px 150px;
+    justify-content: space-between;
+}
+.menu > ul > li {
+    width: 14%;
+    margin-bottom: 20px;
+}
+.menu > ul > li > p {
+    color: #989434;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.menu > ul > li > .menuInner {
+    font-family: "Montserrat", "Noto Sans KR";
+}
+.menu > ul > li > .menuInner > li {
+    margin-bottom: 15px;
+}
+.menu > ul > li > .menuInner > .innerTitle {
+    font-weight: 500;
+    font-size: 18px;
+}
+.menu > ul > li > .menuInner > .subTitle {
+    font-weight: 300;
+    color: rgba(255,255,255,0.8);
+}
+.menu > ul > .lounge > ul > li a > img {
+    width: 175px;
+}
+.menu > ul > .lounge > ul > li a > p {
+    font-weight: 300;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 10px;
+}
+section {position: relative;}
+/* main01 */
+.dim {
+    background: rgba(0,0,0,0.5);
+    height: 100vh;
+    display: none;
+}
+.dim.on {display: block;}
+.main01 {
+    background: url(../img/main_bg.jpg) no-repeat center / cover;
+    height: 100vh;
+    position: relative;
+}
+.main01 h1 > span {font-size: 60px;}
+.main01 h1 {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-size: 50px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.book_wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 30px auto;
+    top: 65%; left: 50%;
+    transform: translate(-50%, 20px);
+    position: absolute;
+    color: white;
+    transition: margin-top 0.3s ease, opacity 1s ease;
+    opacity: 0;
+}
+.book_wrap.show {
+    transform: translate(-50%,-50%);
+    opacity: 1;
+}
+.book_wrap > li {cursor: pointer;}
+.book_wrap > li:first-child:after {
+    width: 0;
+}
+.book_wrap > li:last-child:after {
+    width: 0;
+}
+.book_wrap > li:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: rgba(255,255,255,0.3);
+    top: 0;
+    margin-left: -50px;
+}
+.book_wrap > li > span {
+    font-family: "Montserrat", sans-serif;
+    color: #B3B3B3;
+    font-weight: 600;
+    font-size: 15px;
+}
+.book_wrap > li > h3 {
+    font-family: "Montserrat", "Noto Sans KR";
+    font-weight: 700;
+    font-size: 22px;
+}
+.book_wrap .person > ul {
+    display: flex;
+    justify-content: space-between;
+}
+.book_wrap .person > ul li {
+    margin-right: 20px;
+    text-align: center;
+}
+.book_wrap > li:last-child a {
+    display: block;
+    border: 3px solid white;
+    padding: 15px 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+/* reservation */
+.book_wrap .reservation {position: relative;}
+.book_wrap .reservation .rev_select.on {display: block;}
+.book_wrap .reservation .rev_select {
+    display: none;
+    font-family: "Montserrat", sans-serif;
+    background: white;
+    color: rgba(0,0,0,0.8);
+    position: absolute;
+    width: 100%;
+    bottom: 70px;
+}
+.book_wrap .reservation .rev_select li {
+    padding: 20px 10px;
+}
+.book_wrap .reservation .rev_select li:hover {
+    background-color: #F7F7F7;
+}
+/* hotel_select */
+.book_wrap .hotel .hotel_select.on {display: block;}
+.book_wrap .hotel .hotel_select {
+    display: none;
+    background: white;
+    position: absolute;
+    left: 50%; bottom: 70px;
+    transform: translateX(-50%);
+    color: rgba(0,0,0,0.8);
+    width: 1400px; height: 525px;
+    padding: 30px;
+    z-index: 20;
+}
+.book_wrap .hotel .hotel_select .btnClose {
+    background: url(../img/ico/btn_close_25x25.png) no-repeat center / contain;
+    width: 25px; height: 25px;
+    border: none;
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+}
+.book_wrap .hotel .hotel_select ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.book_wrap .hotel .hotel_select ul li {
+    border: 1px solid #999999;
+    margin: 20px;
+    width: 250px; height: 130px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    word-break: keep-all;
+}
+.book_wrap .hotel .hotel_select ul li:hover {
+    background:#999999;
+    color: white;
+}
+.book_wrap .hotel .hotel_select ul li a {
+    margin: auto 0;
+    text-align: center;
+    display: block;
+}
+.book_wrap .hotel .hotel_select ul li a img {
+    max-width: 100%;
+    margin: 10px 0;
+}
+.book_wrap .hotel .hotel_select ul li p {
+    display: block;
+}
+/* date */
+.book_wrap .date .date_select.on {display: block;}
+.book_wrap .date .date_select {
+    display: none;
+    padding: 30px 0;
+    background: white;
+    position: absolute;
+    bottom: 70px; left: 50%;
+    transform: translateX(-50%);
+    width: 100%; height: 450px;
+}
+.book_wrap .date .date_select .btnClose {
+    background: url(../img/ico/btn_close_25x25.png) no-repeat center / contain;
+    width: 25px; height: 25px;
+    border: none;
+    position: absolute;
+    right: 30px;
+}
+.calendar {
+    color: rgba(0,0,0,0.7);
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: 80%; height: 90%;
+    margin: 20px auto;
+    font-size: 18px;
+}
+.calendar table {
+    border-collapse: collapse;
+    width: 400px;
+    text-align: center;
+    margin: 0 50px;
+}
+.calendar th {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-weight: 500;
+}
+.calendar th > span,
+.calendar td > span {
+    color: #DE3636;
+}
+.calendar td {
+    position: relative;
+    cursor: pointer;
+}
+.calendar td:hover, 
+.calendar td > span:hover {color: white;}
+.calendar td:hover:before {
+    content: '';
+    position: absolute;
+    background: #BA998C;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    top: 0; left: 0;
+    z-index: -1;
+}
+.calendar td {
+    padding: 10px;
+}
+.calendar .today {
+    background-color: #BA998C;
+}
+.calendar .month-title {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+/* person */
+.book_wrap .person .person_select .btnClose {
+    background: url(../img/ico/btn_close_25x25.png) no-repeat center / contain;
+    width: 25px; height: 25px;
+    border: none;
+    position: absolute;
+    right: 30px; top: 25px;
+    cursor: pointer;
+}
+.book_wrap .person .person_select.on {display: flex;}
+.book_wrap .person .person_select {
+    display: none;
+    justify-content: space-between;
+    background:  white;
+    color: rgba(0,0,0,0.8);
+    position: absolute;
+    left: 0; bottom: 70px;
+    padding: 100px;
+    box-sizing: border-box;
+    width: 100%; height: 500px;
+}
+.person_select_inner {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+}
+.person_select_inner .personwrap {
+    width: 100%;
+    margin: auto 0;
+}
+.personwrap .personinner > strong {
+    font-size: 24px;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0 40px 20px 0;
+}
+.personwrap .personinner {
+    display: flex;
+    margin-bottom: 30px;
+}
+.personwrap .personinner:last-child {
+    margin-bottom: 0;
+}
+.personwrap .personinner .adult, 
+.personwrap .personinner .child {
+    margin: 0 60px;
+    position: relative;
+}
+.personwrap .personinner:first-child .adult:after,
+.personwrap .personinner:first-child .child:after {
+    content: '';
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+}
+.personwrap .personinner .adult:after,
+.personwrap .personinner .child:after {
+    content: '';
+    position: absolute;
+    background: rgba(0,0,0,0.2);
+    height: 1px; width: 100%;
+    bottom: 10px; left: 0;
+}
+.personwrap .personinner .adult > span,
+.personwrap .personinner .child > span {
+    margin: 0 60px;
+    font-size: 20px;
+}
+.personwrap .personinner .adult .adult_btnUp,
+.personwrap .personinner .child .child_btnUp {
+    background: url(../img/ico/plus.png) no-repeat center / contain;
+    border: none;
+    width: 15px; height: 15px;
+    cursor: pointer;
+}
+.personwrap .personinner .adult .adult_btnDown,
+.personwrap .personinner .child .child_btnDown {
+    background: url(../img/ico/minus.png) no-repeat center / contain;
+    border: none;
+    width: 15px; height: 15px;
+    cursor: pointer;
+}
+.person_select_inner .btnArea {
+    width: 30%;
+    margin: auto;
+}
+.person_select_inner .btnArea ul li {
+    color: #999999;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.person_select_inner .btnArea > button {
+    background: white;
+    border: 1px solid rgba(0,0,0,0.8);
+    padding: 10px 40px;
+    width: 180px; height: 60px;
+    font-size: 18px;
+    cursor: pointer;
+}
+/* promotion */
+.book_wrap .search .promotion > button {
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: -40px; right: 0;
+    margin: 0 0 15px 10px;
+    font-size: 16px;
+}
+.book_wrap .search .promotion > button:before {
+    background: url(../img/ico/plus_wh.png) no-repeat center / contain;
+    width: 12px; height: 12px;
+    left: -10px; top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    position: absolute;
+}
+.promotion .promotion_input {
+    position: absolute;
+    right: 0; bottom: 62px;
+    display: none;
+}
+.promotion .promotion_input.on {display: block;}
+.promotion .promotion_input > ul {
+    display: flex;
+    color: rgba(0,0,0,0.8);
+    background: white;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px 15px;
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+.promotion .promotion_input > ul .codeType {
+    cursor: pointer;
+}
+.promotion .promotion_input > ul .codeType > span {
+    font-size: 12px;
+    margin: 0 20px;
+}
+.promotion .promotion_input > ul .codeType > .codeType_select.on {
+    display: block;
+}
+.promotion .promotion_input > ul .codeType > .codeType_select {
+    border: 1px solid rgba(0,0,0,0.8);
+    display: none;
+    position: absolute;
+    bottom: 70px;
+    background: white;
+}
+.promotion .promotion_input > ul .codeType > .codeType_select li {
+    padding: 15px 10px;
+}
+.promotion .promotion_input > ul .codeType > .codeType_select li:hover {
+    background: #F7F7F7;
+} 
+.promotion .promotion_input > ul > .inputarea input {
+    height: 100%;
+    border: none;
+    color: #B3B3B3;
+    font-size: 16px;
+}
+.promotion .promotion_input > ul li > button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* scroll */
+.scroll {
+    position: absolute;
+    color: white;
+    text-align: center;
+    bottom: 60px; left: 50%;
+}
+.scroll > p {
+    margin-bottom: 10px;
+}
+.scroll .scroll_arrows {position: relative;}
+.scroll .scroll_arrows > span {
+    position: absolute;
+    display: block;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: rotate(-45deg);
+    animation: scrollDown 2s infinite;
+    box-sizing: border-box;
+
+}
+.scroll .scroll_arrows > span:nth-child(2) {
+    top: 8px;
+}
+.scroll .scroll_arrows > span:nth-child(3) {
+    top: 16px;
+}
+
+@keyframes scrollDown {
+    0% {
+        transform: translateY(0) rotate(-45deg);
+    }
+    50% {
+        transform: translateY(5px) rotate(-45deg);
+    }
+    100% {
+        transform: translateY(0) rotate(-45deg);
+    }
+}
+
+/* main02 */
+.main02 {
+    width: 100%;
+    height: 100vh;
+    padding: 120px 0;
+    box-sizing: border-box;
+}
+.main02 .content {
+    width: 70%;
+    margin: 40px auto;
+    position: relative;
+}
+.main02 .content a h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    margin: 30px auto;
+    display: inline-block;
+    left: 40px;
+}
+.main02 .content a h2:after {
+    content: '';
+    background: url(../img/ico/ico_more.png) no-repeat center / contain;
+    width: 12px; height: 12px;
+    position: absolute;
+    top: 50%; left: 150px;
+    transform: translateY(-50%);
+}
+.main02 .content .swiper {
+    width: 100%;
+    height: 500px;
+}
+.main02 .content .swiper .swiper-slide,
+.main03 .content .swiper .swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 360px;
+}
+.main02 .content .swiper .swiper-slide a {
+    display: block;
+}
+.main02 .content .swiper .swiper-slide img,
+.main03 .content .swiper .swiper-slide img {
+    display: block;
+    width: 360px; 
+    object-fit: cover;
+    margin: 0 auto 20px;
+}
+.main02 .content .swiper .swiper-slide .textArea {
+    width: 360px
+}
+.main02 .content .swiper .swiper-slide .textArea > h4 {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 20px;
+}
+.main02 .content .swiper .swiper-slide .textArea > p {
+    font-size: 16px;
+    color: rgba(0,0,0,0.7);
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-family: "Montserrat";
+}
+.main02 .content .swiper .swiper-slide .textArea > span {
+    color: white;
+    background: black;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+.main02 .content .swiper .swiper-slide:first-child .textArea > span {
+    background-color: #2E6781;
+}
+.main02 .content .swiper .swiper-slide:nth-child(2) .textArea > span {
+    background-color: #968A8B;
+}
+.main02 .content .swiper .swiper-slide:nth-child(3) .textArea > span {
+    background-color: #1F453B;
+}
+.main02 .content .swiper .swiper-slide:nth-child(4) .textArea > span {
+    background-color: #6A6C73;
+}
+.main02 .content .swiper .swiper-slide:nth-child(6) .textArea > span {
+    background-color: #D20A10;
+}
+.main02 .content .swiper .swiper-slide:nth-child(8) .textArea > span {
+    background-color: #3E97D3;
+}
+.main02 .content .swiper .swiper-slide:nth-child(9) .textArea > span {
+    background-color: #C79689;
+}
+/* swiper button 설정 */
+.navigation-wrapper {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display:flex;
+    justify-content:space-between;
+    width: 120%;
+    z-index: 10;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {display: none;}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: static;
+    width: 66px!important; height: 66px!important;
+}
+.swiper-button-next {
+    background: url(../img/ico/btn_swipe_right.png) no-repeat center / contain;
+}
+.swiper-button-prev {
+    background: url(../img/ico/btn_swipe_left.png) no-repeat center / contain;
+}
+
+/* main03 */
+.main03 {
+    width: 100%;
+    height: 100vh;
+    padding: 120px 0;
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+}
+.main03 .content {
+    width: 70%;
+    margin: 40px auto;
+    position: relative;
+}
+.main03 .content .titleArea {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.main03 .content .titleArea h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    color: black;
+    margin-bottom: 20px;
+}
+.main03 .content .titleArea > p {
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+}
+.main03 > .content .swiper {
+    height: 500px;
+}
+.main03 > .content .swiper .swiper-slide {
+    background: none;
+    height: 50%;
+}
+.main03 > .content .swiper .swiper-slide .textArea {
+    position: relative;
+}
+.main03 > .content .swiper .swiper-slide .textArea .title {
+    position: absolute;
+}
+.main03 > .content .swiper .swiper-slide .textArea .title > span {
+    font-family: "Montserrat", sans-serif;
+    color: rgba(0,0,0,0.8);
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: block;
+}
+.main03 > .content .swiper .swiper-slide .textArea .title > h4 {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: black;
+}
+
+.main03 > .content .swiper .swiper-slide .textArea .subtext {
+    position: absolute;
+    bottom: -140px;
+}
+.main03 > .content .swiper .swiper-slide .textArea .subtext > em:after {
+    background: rgba(0,0,0,0.7);
+    width: 10%; height: 1px;
+    content: '';
+    position: absolute;
+    top: 0;
+}
+.main03 > .content .swiper .swiper-slide .textArea .subtext > p {
+    font-size: 15px;
+    display: block;
+    margin-top: 10px;
+}
+/* main04 */
+.main04 {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background: url(../img/section04_bg.jpg) no-repeat center / cover;
+}
+.main04 .content {
+    padding: 200px 0 40px;
+    box-sizing: border-box;
+    background-color: white;
+    width: 100%; height: 65vh;
+    margin: 40px auto;
+    text-align: center;
+}
+.main04 .content > h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 20px;
+}
+.main04 .content > p {
+    color: black;
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+.main04 .content > .btnArea > button {
+    font-family: "Montserrat", sans-serif;
+    width: 220px; height: 55px;
+    font-size: 18px;
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 0 10px;
+}
+.main04 .content > .btnArea > button a {
+    display: block;
+    width: 100%; height: 100%;
+    line-height: 3;
+}
+
+/* main05 */
+.main05 {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/section05_bg.jpg) no-repeat center / cover;
+    position: relative;
+}
+.main05 .content {
+    background-color: white;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -60%);
+    padding: 50px 100px;
+    box-sizing: border-box;
+    width: 65%; height: 65%;
+}
+.main05 .content .title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.main05 .content .title > h2 {
+    font-family: "Playfair Display", serif; 
+    color: black;
+    font-weight: 400;
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+.main05 .content .title > p {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+.main05 .content .logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main05 .content .logo a {
+    display: block;
+    margin: 0 20px 20px;
+}
+.main05 .content .logo a img:hover {
+    filter: brightness(0.4);
+}
+.main05 .book_wrap.show {
+    transform: translate(-50%, 150px);
+}
+.main05 .bookwrap {
+    position: absolute;
+}
+/* main06 */
+.main06 {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/section06_bg.jpg) no-repeat center / cover;
+    transition: background-image 0.5s;
+    position: relative;
+    margin-bottom: 20px;
+}
+.main06 .content {
+    padding: 200px 0 0;
+    margin: auto;
+}
+.main06 .content .titleArea {
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.main06 .content .titleArea h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+.main06 .content .titleArea > p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 2;
+}
+.main06 .content .logo {
+    margin: 0 auto;
+    text-align: center;
+}
+.main06 .content .logo tr,
+.main06 .content .logo tr td {
+    border: 1px solid rgba(255,255,255,0.5);
+}
+.main06 .content .logo tr td {
+    padding: 40px 60px;
+    box-sizing: border-box;
+    position: relative;
+}
+.main06 .content .logo tr td:hover {
+    background: rgba(0,0,0,0.2);
+}
+.main06 .content .logo tr td > a {
+    display: block;
+    width: 100%; height: 100%;
+}
+.main06 .content .logo tr td > a span {
+    display: none;
+    color: rgba(255,255,255,0.5);
+    text-decoration: underline;
+    position: absolute;
+    font-weight: 300;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main06 .content .logo tr td > a span.on {
+    display: block;
+}
+/* footer */
+footer {
+    height: 30vh;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 60px 100px;
+}
+footer .logo {
+    margin-bottom: 60px;
+}
+footer .logo a {
+    margin: 0 20px;
+}
+footer .btmArea {
+    display: flex;
+    justify-content: space-between;
+}
+footer .btmArea .center {
+    width: 55%;
+}
+footer .btmArea .center .category {
+    font-weight: 400;
+    font-size: 15px;
+    word-break: keep-all;
+    line-height: 2;
+    text-align: left;
+    margin: 0 auto 30px;
+}
+footer .btmArea .center .category a {
+    margin: 0 30px 0 0;
+}
+footer .btmArea .center .category > a span {
+    color: #989434;
+}
+footer .btmArea .center .info {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    text-align: left;
+    margin: 0 auto;
+}
+footer .btmArea .center .info p {
+    margin-bottom: 10px;
+}
+footer .btmArea .center .info p > span {
+    margin: 0 20px;
+    display: inline-block;
+}
+footer .btmArea .right {position: relative;}
+footer .btmArea .right button {
+    padding: 0 30px 5px 0;
+    text-align: left;
+    background: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    margin-bottom: 20px;
+    width: 230px;
+    cursor: pointer;
+}
+footer .btmArea .right button.on:after {
+    transform: rotate(-225deg);
+    top: 20%;
+}
+footer .btmArea .right button:after {
+    position: absolute;
+    right: 10px;
+    content: '';
+    width: 10px; height: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transform: rotate(-45deg);
+}
+footer .btmArea .right .familysite.on {display: block;}
+footer .btmArea .right .familysite {
+    display: none;
+    position: absolute;
+    bottom: 185px;
+    text-align: left;
+    background: black;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: white;
+    font-size: 12px;
+    width: 100%;
+    z-index: 20;
+}
+footer .btmArea .right .familysite li {
+    padding: 10px 20px;
+}
+footer .btmArea .right .familysite li:hover {
+    text-decoration: underline;
+}
+footer .btmArea .right .sns {
+    display: flex;
+    justify-content: space-between;
+}
