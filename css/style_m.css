@@ -12,8 +12,9 @@ header .gnb {
     position: relative;
 }
 #main .title .subtxt {
-    left: -50px;
     font-size: 44px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 #main .title .maintxt {
     font-size: 48px;
@@ -27,21 +28,24 @@ h3 {
 }
 
 /* about */
+#about {
+    display: block;
+    margin-bottom: 100px;
+}
 #about figure {
-    width: 300px;
-    left: 0;
+    left: 50%; top: 0;
+    width: 70%;
+    transform: translateX(-50%);
+    display: block;
 }
+#about figure img {display: block;}
 #about ul {
-    right:  0px;
-}
-#about ul li {
-    margin-bottom: 20px
-}
-#about ul li > h1 {
-    font-size: 19px;
-}
-#about ul li > p {
-    font-size: 16px;
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 140px 0 0;
+    transform: translateY(0);
+    text-align: center;
 }
 #about ul li > span {
     padding: 5px 12px;
@@ -49,7 +53,7 @@ h3 {
     margin: 0 3px 15px 0px;
 }
 /* project */
-#project {padding-top: 100px;}
+#project {padding-top: 200px;}
 #project #contwrap_web .content {
     display: block;
     width: 100%;
@@ -142,7 +146,8 @@ footer {
 @media screen and (max-width: 480px) {
 
     #main .title .subtxt {
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
         font-size: 36px;
         margin-bottom: 10px;
     }
@@ -158,6 +163,7 @@ footer {
         margin-bottom: 100px;
     }
     #about figure {
+        width: 90%;
         left: 50%; top: 0;
         transform: translateX(-50%);
         display: block;
@@ -167,12 +173,12 @@ footer {
         width: 100%;
         display: block;
         position: relative;
-        top: 420px; bottom: 0; right: 0;
+        padding-top: 20px;
         transform: translateY(0);
         text-align: center;
     }
     #about ul li > h1 {font-size: 20px;}
-    #project {padding-top: 200px;}
+    #project {padding-top: 350px;}
     #project #contwrap_web .content .imgarea > a img {
         width: 100%;
         height: 100%;

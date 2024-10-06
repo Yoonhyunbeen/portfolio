@@ -335,6 +335,7 @@ a, a > button, button {cursor: pointer;}
     padding: 20px 0;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid #000;
+    cursor: pointer;
 }
 .content .tab li.on {
     border: 1px solid #000;
@@ -344,10 +345,13 @@ a, a > button, button {cursor: pointer;}
     font-weight: 400;
 }
 .cont01 {
-    display: flex;
+    display: none;/* flex; */
     justify-content: space-between;
     padding: 70px 0;
     width: 100%;
+}
+.cont01.on {
+    display: flex;
 }
 .cont01 .left {width: 45%;}
 .cont01 .left input {
@@ -387,7 +391,7 @@ a, a > button, button {cursor: pointer;}
     background: black;
     color: white;
     font-size: 20px;
-    border: none;
+    border: 1px solid black;
     width: 100%;
     padding: 25px 0;
     margin-bottom: 20px;
@@ -474,6 +478,196 @@ a, a > button, button {cursor: pointer;}
     width: 26px; height: 26px;
     top: 40%; left: 20px;
     transform: translateY(-50%);
+}
+.cont02.on {display: block;}
+.cont02 {
+    display: none;
+    width: 50%;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+.cont02 .select {
+    display: flex;
+    font-size: 18px;
+}
+
+.cont02 .select > input {
+    display: none;
+}
+.cont02 .select > label {
+    padding-left: 36px;
+    display: block;
+    margin: 0 30px 20px 0;
+}
+.cont02 .select > input + label {position: relative;}
+.cont02 .select > input + label {cursor: pointer;}
+.cont02 .select > input + label:before {
+    background: url(../img/ico/select.png) no-repeat center / contain;
+    width: 26px; height: 26px;
+    content: '';
+    position: absolute;
+    display: inline-block;
+    left: 0;
+}
+.cont02 .select > input:checked + label:before {
+    background: url(../img/ico/select_on.png) no-repeat center / contain;
+    width: 26px; height: 26px;
+    content: '';
+    position: absolute;
+    display: inline-block;
+    left: 0;
+}
+.cont02 .room.on {display: block;}
+.cont02 .room {
+    display: none;
+    position: relative;
+}
+.cont02 .room > p {
+    position: relative;
+    cursor: pointer;
+}
+.cont02 .room .room_select {
+    width: 100%;
+    border: 1px solid black;
+    border-top: none;
+    position: absolute;
+    display: none;
+    transition: all 0.5s;
+}
+.cont02 .room_select li {
+    width: 100%;
+    background: white;
+    border: none;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    display: block;
+    font-size: 18px;
+}
+.cont02 .room_select li:hover {
+    background: #F9F9F9;
+}
+.cont02 .room > p > span {
+    position: absolute;
+    right: 20px;
+    font-size: 14px;
+}
+.cont02 .room > p,
+.cont02 .room > .name > input,
+.cont02 .room > input {
+    width: 100%;
+    background: #F9F9F9;
+    border: none;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.cont02 .room > a button,
+.cont02 .activity > a button {
+    background: black;
+    color: white;
+    font-size: 20px;
+    border: 1px solid black;
+    width: 100%;
+    padding: 25px 0;
+    margin-bottom: 20px;
+    transition: background 0.5s;
+}
+.cont02 .room > a button:hover,
+.cont02 .activity > a button:hover {
+    border: 1px solid rgba(0, 0, 0);
+    background: white;
+    color: #000;
+}
+.cont02 .btmText {
+    display: block;
+    margin-bottom: 10px;
+}
+.cont02 .join {
+    position: relative;
+}
+.cont02 .join:after {
+    content: '';
+    position: absolute;
+    top: 50%; right: -15px;
+    transform: translateY(-50%);
+    width: 10px; height: 10px;
+    background: url(../img/ico/ico_more.png) no-repeat center / contain;
+}
+.cont02 .dining.on {display: block;}
+.cont02 .dining {
+    display: none;
+}
+.cont02 .dining > input {
+    width: 100%;
+    background: #F9F9F9;
+    border: none;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.cont02 .dining > .certific button {
+    background: white;
+    border: 1px solid black;
+    width: 100%;
+    padding: 25px 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.cont02 .activity.on {
+    display: block;
+}
+.cont02 .activity {
+    position: relative;
+    display: none;
+}
+.cont02 .activity > p,
+.cont02 .activity > input {
+    width: 100%;
+    background: #F9F9F9;
+    border: none;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.cont02 .activity > p > span {
+    position: absolute;
+    right: 20px;
+    font-size: 14px;
+}
+.cont02 .activity .room_select {
+    width: 100%;
+    border: 1px solid black;
+    border-top: none;
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+.bottom {
+    position: relative;
+    padding: 30px;
+}
+.bottom ul:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%; height: 1px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.bottom ul li {
+    margin-bottom: 10px;
+    position: relative;
+    color: rgba(0, 0, 0, 0.5);
+}
+.bottom ul li:before {
+    content: '*';
 }
 /* font-family: "Montserrat", sans-serif; */
 /* font-family: "Playfair Display", serif; */

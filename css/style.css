@@ -154,7 +154,7 @@ header .gnb li:hover:before {
 
 /* about */
 #about {
-    width: 90%;
+    width: 70%;
     height: calc(100vh - 60px);
     margin: 0 auto;
     padding: 0 0 70px;
@@ -164,10 +164,9 @@ header .gnb li:hover:before {
 }
 
 #about figure {
-    width: 450px;
+    width: 40%;
     position: absolute;
     top: 50%;
-    left: 130px;
     transform: translateY(-50%);
 }
 
@@ -180,8 +179,7 @@ header .gnb li:hover:before {
 #about ul {
     width: 45%;
     position: absolute;
-    right: 130px;
-    top: 50%;
+    top: 50%; right: 0;
     transform: translateY(-50%);
 }
 
@@ -323,7 +321,7 @@ h3:before {
    padding: 3px 20px;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    margin-right: 10px;
+    margin: 0 10px 10px 0;
 }
 #project #contwrap_web .content .text .page > a:hover {
     background: #ecd04c;

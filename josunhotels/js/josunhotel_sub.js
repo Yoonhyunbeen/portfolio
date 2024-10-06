@@ -79,6 +79,21 @@ $(document).ready(function() {
         });
     });
 
+    //login room_select list
+    $('.cont02 .subcont .select').on('click', function() {
+        const select = $(this);
+        const selectList = $('.cont02 .subcont .room_select');
+    
+        if (selectList.is(':visible')) {
+            selectList.slideUp(300, function() {
+                selectList.removeClass('on');
+            });
+        } else {
+            selectList.slideDown(300, function() {
+                selectList.addClass('on');
+            });
+        }
+    });
 
     //footer family site
     $('footer .btmArea .right > button').on('click', function() {

@@ -175,11 +175,11 @@
                 <h2>SIGN IN</h2>
                 <p>머무는 모든 순간이 특별해집니다.</p>
             </div>
-          <ul class="tab">
-            <li class="on" onclick="tabview(0)">아이디 로그인</li>
-            <li onclick="tabview(1)">비회원 예약확인</li>
-          </ul>
-            <div class="cont01 on">
+            <ul class="tab">
+                <li class="on" onclick="tabview(0)">아이디 로그인</li>
+                <li onclick="tabview(1)">비회원 예약확인</li>
+            </ul>
+            <div class="cont cont01 on">
                 <div class="left">
                     <input type="text" placeholder="아이디">
                     <input type="text" placeholder="비밀번호">
@@ -201,48 +201,48 @@
                     <a href="#" class="apple"><button>애플 로그인</button></a>
                 </div>
             </div>
-            <div class="cont02">
+            <div class="cont cont02">
                 <span class="select">
-                    <input type="radio" id="resvType01" name="resvType" checked onclick="tabview(0)">
+                    <input type="radio" id="resvType01" name="resvType" checked onclick="subtabview(0)">
                     <label for="resvType01">객실</label>
-                    <input type="radio" id="resvType02" name="resvType" onclick="tabview(1)">
+                    <input type="radio" id="resvType02" name="resvType" onclick="subtabview(1)">
                     <label for="resvType02">다이닝</label>
-                    <input type="radio" id="resvType03" name="resvType" onclick="tabview(2)">
+                    <input type="radio" id="resvType03" name="resvType" onclick="subtabview(2)">
                     <label for="resvType03">액티비티</label>
                 </span>
-                <div class="room" class="on">
-                    <select name="호텔선택" id="room_select">
-                        <option value="select">호텔선택</option>
-                        <option value="busan">그랜드 조선 부산</option>
-                        <option value="jeju">그랜드 조선 제주</option>
-                    </select>
+                <div class="subcont room on">
+                    <p class="select">호텔선택 <span>▼</span></p>
+                    <ul class="room_select">
+                        <li>그랜드 조선 부산</li>
+                        <li>그랜드 조선 제주</li>
+                    </ul>
                     <div class="name">
                         <input type="text" placeholder="Family Name (성)">
                         <input type="text" placeholder="First Name (이름)">
                     </div>
                     <input type="text" placeholder="예약번호">
                     <a href="#"><button>예약확인</button></a>
-                    <p>CLUB JOSUN 회원이 되시면 더 많은 혜택이 있습니다.</p>
-                    <a href="#">회원가입</a>
+                    <span class="btmText">CLUB JOSUN 회원이 되시면 더 많은 혜택이 있습니다.</span>
+                    <a href="#" class="join">회원가입</a>
                 </div>
-                <div class="dining">
+                <div class="subcont dining">
                     <input type="text" placeholder="예약자 이름">
                     <input type="text" placeholder="예약자 휴대폰 번호">
-                    <a href="#"><button>인증번호 요청</button></a>
-                    <p>CLUB JOSUN 회원이 되시면 더 많은 혜택이 있습니다.</p>
-                    <a href="#">회원가입</a>
+                    <a href="#" class="certific"><button>인증번호 요청</button></a>
+                    <span class="btmText">CLUB JOSUN 회원이 되시면 더 많은 혜택이 있습니다.</span>
+                    <a href="#" class="join">회원가입</a>
                 </div>
-                <div class="activity">
-                    <select name="호텔선택" id="room_select">
-                        <option value="select">호텔선택</option>
-                        <option value="busan">그랜드 조선 부산</option>
-                        <option value="jeju">그랜드 조선 제주</option>
-                    </select>
+                <div class="subcont activity">
+                    <p class="select">호텔선택<span>▼</span></p>
+                    <ul class="room_select">
+                        <li>그랜드 조선 부산</li>
+                        <li>그랜드 조선 제주</li>
+                    </ul>
                     <input type="text" placeholder="예약자 이름">
                     <input type="text" placeholder="예약번호">
                     <a href="#"><button>예약확인</button></a>
-                    <p>CLUB JOSUN 회원이 되시면 더 많은 혜택이 있습니다.</p>
-                    <a href="#">회원가입</a>
+                    <span class="btmText">CLUB JOSUN 회원이 되시면 더 많은 혜택이 있습니다.</span>
+                    <a href="#" class="join">회원가입</a>
                 </div>
             </div>
             <div class="bottom">
@@ -255,7 +255,7 @@
             </div>
         </div>
     </section>
-   
+
     <footer>
         <div class="logo">
             <a href="https://jpg.josunhotel.com/" target="_blank"><img src="img/logo/footer_logo06.png" alt="조선팰리스"></a>
@@ -328,7 +328,36 @@
     </footer>
 
     <script src="js/josunhotel_sub.js"></script>
+    <script>
+        function tabview(index) {
+            const tabs = document.querySelectorAll('.content .tab > li')
+            const conts = document.querySelectorAll('.content .cont')
 
+            tabs.forEach(tab => tab.classList.remove('on'));
+            conts.forEach(cont => cont.classList.remove('on'));
+
+            tabs[index].classList.add('on');
+            conts[index].classList.add('on');
+        }
+
+        const radioButtons = document.querySelectorAll('input[name="resvType"]');
+        radioButtons.forEach((radio, index) => {
+            radio.addEventListener('click', () => {
+                subtabview(index);
+            });
+        });
+
+        function subtabview(index) {
+            const subtabs = document.querySelectorAll('.cont02 > span');
+            const subconts = document.querySelectorAll('.cont02 > .subcont');
+
+            subtabs.forEach((subtab) => subtab.classList.remove('on'));
+            subconts.forEach((subcont) => subcont.classList.remove('on'));
+
+
+            subconts[index].classList.add('on');
+        }
+    </script>
 </body>
 
 </html>
