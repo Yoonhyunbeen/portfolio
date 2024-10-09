@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국립민속박물관</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/m_main.css" media="screen and (max-width: 1201px)">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="header_top">
+            <div class="header_top_inner">
+                <ul class="left">
+                    <li><a href="https://www.nfm.go.kr/paju/" target="_blank">파주관</a></li>
+                    <li><a href="https://www.nfm.go.kr/kids/" target="_blank">어린이박물관</a></li>
+                    <li><a href="https://folkency.nfm.go.kr/main" target="_blank">한국민속대백과사전</a></li>
+                    <li><a href="https://efw.nfm.go.kr/" target="_blank">민속현장조사</a></li>
+                    <li><a href="https://www.ijih.org/" target="_blank">국제저널 무형유산</a></li>
+                </ul>
+                <ul class="right">
+                    <li class="sns">
+                        <ul>
+                            <li>
+                                <a href="#" class="insta"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="youtube"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="blog"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="twitter"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="lang">
+                        <p>Language</p>
+                        <ul class="lang_inner">
+                            <li><a href="#">ENGLISH</a></li>
+                            <li><a href="#">中文</a></li>
+                            <li><a href="#">日本語</a></li>
+                        </ul>
+                    </li>
+                    <li class="search">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <button class="btn_search"></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="headerWrap">
+            <div class="header">
+                <div class="logo">
+                    <a href="#">
+                        <h1 class="blind">국립민속박물관</h1>
+                    </a>
+                </div>
+                <ul class="gnb">
+                    <li>
+                        <a href="sub01_info.html">관람안내 &middot; 예약</a>
+                        <ul class="depth">
+                            <li><a href="sub01_info.html">본관</a></li>
+                            <li><a href="#">어린이박물관</a></li>
+                            <li><a href="#">파주관</a></li>
+                            <li><a href="#">박물관 소개</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub02_exhibition.html">전시</a>
+                        <ul class="depth">
+                            <li><a href="sub02_exhibition.html">본관 전시</a></li>
+                            <li><a href="#">파주관 전시</a></li>
+                            <li class="gosite"><a
+                                    href="https://www.nfm.go.kr/kids/nfmkid/show/view1.do?shType=P&shLang=KR&shActive=1"
+                                    target="_blank">어린이박물관 전시</a></li>
+                            <li><a href="#">교류 전시</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub03_event.html">교육 &middot; 행사</a>
+                        <ul class="depth">
+                            <li><a href="sub03_event.html">교육안내 &middot; 신청</a></li>
+                            <li><a href="#">교육자료</a></li>
+                            <li><a href="#">행사 및 공연</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">소장자료</a>
+                        <ul class="depth">
+                            <li><a href="#">소장품</a></li>
+                            <li><a href="#">민속아카이브</a></li>
+                            <li><a href="#">도서자료실</a></li>
+                            <li><a href="#">기증</a></li>
+                            <li><a href="#">열람 &middot; 복제 &middot; 매도</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">학술 &middot; 정보</a>
+                        <ul class="depth">
+                            <li class="gosite"><a href="https://folkency.nfm.go.kr/main" target="_blank">한국민속대백과사전</a>
+                            </li>
+                            <li class="gosite"><a href="https://efw.nfm.go.kr/" target="_blank">민속현장조사</a></li>
+                            <li class="gosite"><a href="https://www.ijih.org/" target="_blank">국제저널무형유산</a></li>
+                            <li><a href="#">발간자료 검색</a></li>
+                            <li><a href="#">학술세미나</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">소식</a>
+                        <ul class="depth">
+                            <li><a href="#">알림 &middot; 공고</a></li>
+                            <li class="gosite"><a href="https://webzine.nfm.go.kr/" target="_blank">웹진</a></li>
+                            <li><a href="#">전자민원</a></li>
+                            <li><a href="#">정보공개</a></li>
+                            <li><a href="#">법령, 규정 등</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">디지털 박물관</a>
+                        <ul class="depth">
+                            <li><a href="#">VR &middot; 온라인 전시</a></li>
+                            <li><a href="#">영상채널</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="mobile_btn">
+                    <div class="m_search_wrap">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <button class="m_btn_search"></button>
+                        <button class="m_btn_close"></button>
+                    </div>
+                    <a href="#" class="m_menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main_video">
+            <video src="img/mainvideo_pc.mp4" muted autoplay playsinline></video>
+        </div>
+        <div class="news">
+            <div class="newsWrap">
+                <p class="newTitle">새소식</p>
+                <div class="textslidewrap">
+                    <ul class="textslide">
+                        <li class="current">
+                            <a href="#">
+                                <span>[공지]</span>[공모] 국립민속박물관 세종 이전 건립 건축 설계공모(등록기간: 9.23.월~10.4.금 18시)
+                            </a>
+                        </li>
+                        <li class="next">
+                            <a href="#">
+                                <span>[공지]</span>어린이박물관 임시휴관 안내 (~ 10.29.화)
+                            </a>
+                        </li>
+                        <li class="prev">
+                            <a href="#">
+                                국제학술대회《고령화시대 박물관의 역할과 대응》안내 (11.5.화)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="viewMore"><button>더보기</button></a>
+            </div>
+        </div>
+        <div class="museum">
+            <a href="sub01_info.html" class="imgWrap main">
+                <figure><img src="img/main_museum_01.jpg" alt="본관"></figure>
+                <div class="textArea">
+                    <h3>본관</h3>
+                    <p>본관 관람안내 바로가기</p>
+                </div>
+            </a>
+            <a href="https://www.nfm.go.kr/kids/nfmkid/show/view1.do?shType=P&shLang=KR&shActive=1" target="_blank"
+                class="imgWrap kids">
+                <figure><img src="img/main_museum_02.jpg" alt="어린이박물관"></figure>
+                <div class="textArea">
+                    <h3>어린이박물관</h3>
+                    <p>어린이박물관 누리집 바로가기</p>
+                </div>
+            </a>
+            <a href="https://www.nfm.go.kr/paju/" class="imgWrap paju">
+                <figure><img src="img/main_museum_03.jpg" alt="파주관"></figure>
+                <div class="textArea">
+                    <h3>파주관</h3>
+                    <p>파주관 누리집 바로가기</p>
+                </div>
+            </a>
+        </div>
+        <div class="exhibition">
+            <div class="title">
+                <h2>전시</h2>
+                <div class="swiper-button-wrap">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="swiper exhSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="imgArea">
+                                <span>현재전시</span>
+                                <figure><img src="img/exhibition08.jpg" alt=""></figure>
+                            </div>
+                            <div class="textArea">
+                                <h5>요즘 커피</h5>
+                                <span>2024-08-20 - 2024-11-10</span>
+                                <span>본관 기획전시실 2</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="imgArea">
+                                <span>지난전시</span>
+                                <figure><img src="img/exhibition07.jpg" alt=""></figure>
+                            </div>
+                            <div class="textArea">
+                                <h5>종이, 봄날을 만나다</h5>
+                                <span>2024-05-17 - 2024-09-22</span>
+                                <span>파주 개방형 수장고 16</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="imgArea">
+                                <span>지난전시</span>
+                                <figure><img src="img/exhibition05.jpg" alt=""></figure>
+                            </div>
+                            <div class="textArea">
+                                <h5>요물, 우리를 홀린 고양이</h5>
+                                <span>2024-05-03 - 2024-08-18</span>
+                                <span>본관 기획전시실 1</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="imgArea">
+                                <span>지난전시</span>
+                                <figure><img src="img/exhibition06.jpg" alt=""></figure>
+                            </div>
+                            <div class="textArea">
+                                <h5>가정의 달 기념 사랑 특별전 《아버지》 </h5>
+                                <span>2024-04-30 - 2024-07-15</span>
+                                <span>본관 기획전시실 2</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="imgArea">
+                                <span>지난전시</span>
+                                <figure><img src="img/exhibition03.jpg" alt=""></figure>
+                            </div>
+                            <div class="textArea">
+                                <h5>龍, 날아오르다</h5>
+                                <span>2023-12-20 - 2024-03-03</span>
+                                <span>본관 기획전시실 2</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="imgArea">
+                                <span>지난전시</span>
+                                <figure><img src="img/exhibition02.jpg" alt=""></figure>
+                            </div>
+                            <div class="textArea">
+                                <h5>수장고 산책: 아무튼, 동물!</h5>
+                                <span>2024-12-01 - 2024-02-25</span>
+                                <span>국립민속박물관 파주 수장고</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="imgArea">
+                                <span>지난전시</span>
+                                <figure><img src="img/exhibition04.jpg" alt=""></figure>
+                            </div>
+                            <div class="textArea">
+                                <h5>가면 톺아보기</h5>
+                                <span>2023-11-28 - 2024-11-17</span>
+                                <span>파주 열린 보존과학실</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="imgArea">
+                                <span>지난전시</span>
+                                <figure><img src="img/exhibition01.jpg" alt=""></figure>
+                            </div>
+                            <div class="textArea">
+                                <h5>MASK-가면의 일상日常, 가면극의 이상理想</h5>
+                                <span>2023-10-24 - 2024-03-03</span>
+                                <span>본관 기획전시실 1</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="education">
+            <div class="title">
+                <h2>교육</h2>
+                <div class="edu swiper-button-wrap">
+                    <div class="edu swiper-button-next"></div>
+                    <div class="edu swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="edu_tab">
+                <button class="on">전체</button>
+                <button>어린이</button>
+                <button>청소년</button>
+                <button>일반인</button>
+                <button>장애인</button>
+                <button>외국인</button>
+                <button>전문가</button>
+            </div>
+            <div class="swiper eduSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="textArea">
+                                <span>접수중</span>
+                                <h5 class="txtoverflow">[큐레이터 Talk 전시이야기] 전시 아는만큼 보인다 -《7080 추억의 거리》전시</h5>
+                                <p class="txtoverflow">접수대상 : 민속문화에 관심있는 일반인</p>
+                                <p>접수기간: 2024-09-30~2024-11-04</p>
+                                <p>교육기간: 2024-10-30~2024-11-05</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="textArea">
+                                <span>접수중</span>
+                                <h5 class="txtoverflow">[큐레이터 Talk 전시이야기] 전시 아는만큼 보인다 -《요즘 커피》전시</h5>
+                                <p class="txtoverflow">접수대상 : 민속문화에 관심있는 일반인</p>
+                                <p>접수기간: 2024-09-30~2024-10-21</p>
+                                <p>교육기간: 2024-10-15~2024-10-22</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="textArea">
+                                <span>접수중</span>
+                                <h5 class="txtoverflow">2024년 수어 통역 전시해설 시범 운영</h5>
+                                <p class="txtoverflow">청각장애인 개인 및 단체</p>
+                                <p>접수기간: 2024-09-13~2024-11-22</p>
+                                <p>교육기간: 2024-10-02~2024-11-29</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="textArea">
+                                <span>접수중</span>
+                                <h5 class="txtoverflow">[큐레이터 Talk 전시이야기] 전시 아는만큼 보인다 -《7080 추억의 거리》전시</h5>
+                                <p class="txtoverflow">접수대상 : 민속문화에 관심있는 일반인</p>
+                                <p>접수기간: 2024-09-30~2024-11-04</p>
+                                <p>교육기간: 2024-10-30~2024-11-05</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="textArea">
+                                <span>접수중</span>
+                                <h5 class="txtoverflow">2024년「박물관 민속학 교실」</h5>
+                                <p class="txtoverflow">접수대상 : 일반인</p>
+                                <p>접수기간: 2024-04-02~2024-10-29</p>
+                                <p>교육기간: 2024-04-24~2024-10-30</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="textArea">
+                                <span>접수중</span>
+                                <h5 class="txtoverflow">[2024년 청소년 교육] 민속이 담긴 그릇, 공간과 건축</h5>
+                                <p class="txtoverflow">접수대상 : 청소년 학급, 동아리, 동년배 단체</p>
+                                <p>접수기간: 2024-09-24~2024-11-30</p>
+                                <p>교육기간: 2024-09-04~2024-11-30</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="textArea">
+                                <span>접수중</span>
+                                <h5 class="txtoverflow">특별전 ≪요즘 커피≫ 연계 강연회</h5>
+                                <p class="txtoverflow">접수대상 : 커피 등 한국인의 생활문화에 관심 있는 성인</p>
+                                <p>접수기간: 2024-09-24~2024-10-25</p>
+                                <p>교육기간: 2024-10-11~2024-10-21</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="textArea">
+                                <span>접수중</span>
+                                <h5 class="txtoverflow">[2024년 하반기 주말 교육] 골목탐험, 내 친구의 집은 어디?</h5>
+                                <p class="txtoverflow">접수대상 : 초등학교 1~3학년 어린이 동반 가족</p>
+                                <p>접수기간: 2024-08-06~2024-10-26</p>
+                                <p>교육기간: 2024-09-07~2024-11-16</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="textArea">
+                                <span>접수중</span>
+                                <h5 class="txtoverflow">[2024년 하반기 주말 교육] 찾아라, 민속!</h5>
+                                <p class="txtoverflow">접수대상 : 어린이 동반 가족</p>
+                                <p>접수기간: 2024-09-01~2024-11-10</p>
+                                <p>교육기간: 2024-09-01~2024-11-10</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="event">
+            <a href="https://www.e-gen.or.kr/egen/holiday_medical.do?emergencyViewYn=Y" class="imgWrap"
+                title="응급의료포털 새 창 열림" target="_blank"><img src="img/info.jpg" alt=""></a>
+            <ul class="eventList">
+                <li><a href="#">우리민속한마당</a></li>
+                <li><a href="#">문화행사</a></li>
+                <li><a href="#">세시풍속행사</a></li>
+            </ul>
+        </div>
+        <div class="contents">
+            <div class="title">
+                <h2>자주 찾는 콘텐츠</h2>
+                <div class="cont swiper-button-wrap">
+                    <div class="cont swiper-button-next"></div>
+                    <div class="cont swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="swiper contSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <figure><img src="img/content01.jpg" alt=""></figure>
+                            <div class="title">
+                                <h5>장승 &middot; 솟대조사 대작전</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <figure><img src="img/content02.jpg" alt=""></figure>
+                            <div class="title">
+                                <h5>1967, 한국의 마을제당</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <figure><img src="img/content03.jpg" alt=""></figure>
+                            <div class="title">
+                                <h5 class="link">민속아카이브 검색</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <figure><img src="img/content07.jpg" alt=""></figure>
+                            <div class="title">
+                                <h5>발간자료 다운로드</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <figure><img src="img/content04.jpg" alt=""></figure>
+                            <div class="title">
+                                <h5>소장품 검색</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <figure><img src="img/content06.jpg" alt=""></figure>
+                            <div class="title">
+                                <h5>큐레이터 Pick! <br>
+                                    유물이야기</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <figure><img src="img/content08.jpg" alt=""></figure>
+                            <div class="title">
+                                <h5>영상채널</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <figure><img src="img/content09.jpg" alt=""></figure>
+                            <div class="title">
+                                <h5 class="link">웹진</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="f_top">
+                <ul class="category">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">영상정보처리기기 운영·관리 방침</a></li>
+                    <li><a href="#">저작권정책</a></li>
+                    <li><a href="#">RSS</a></li>
+                    <li><a href="#">누리집 지도</a></li>
+                    <li><a href="#">민속생활사박물관 협력망사업</a></li>
+                </ul>
+                <div class="sitemap">
+                    <button>관련사이트</button>
+                    <ul>
+                        <li><a href="#">국립민속박물관 파주</a></li>
+                        <li><a href="#">어린이박물관</a></li>
+                        <li><a href="#">한국민속대백과사전</a></li>
+                        <li><a href="#">민속현장조사</a></li>
+                        <li><a href="#">한국문화상자</a></li>
+                        <li><a href="#">국제저널무형유산</a></li>
+                        <li><a href="#">국립민속박물관회</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="f_btm">
+                <a href="index.html"><img src="img/ico//f_logo.png" alt=""></a>
+                <ul class="info">
+                    <li>본관 [03045] 서울시 종로구 삼청로 37 TEL 02-3704-3114</li>
+                    <li>파주관 [10859] 경기도 파주시 탄현면 헤이리로 30 TEL 031-580-5800~1</li>
+                    <li>Copyright © 국립민속박물관. All Rights Reserved</li>
+                </ul>
+                <div class="logo">
+                    <a href="#"><img src="img/ico/l-mark_image_wa_2024.png" alt=""></a>
+                    <a href="#"><img src="img/ico/l-mark__image--open.png" alt=""></a>
+                </div>
+            </div>
+        </footer>
+    </div><!-- //wrapper -->
+
+
+
+
+
+    <script src="js/nationalfolkmuseum.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".exhSwiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        var eduswiper = new Swiper(".eduSwiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".edu .swiper-button-next",
+                prevEl: ".edu .swiper-button-prev",
+            },
+        });
+        var contswiper = new Swiper(".contSwiper", {
+            slidesPerView: 4,
+            spaceBetween: 150,
+            freeMode: true,
+            loop: true,
+            navigation: {
+                nextEl: ".cont .swiper-button-next",
+                prevEl: ".cont .swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
