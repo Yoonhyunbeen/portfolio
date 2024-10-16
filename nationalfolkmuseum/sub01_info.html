@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국립민속박물관</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sub01.css">
+    <link rel="stylesheet" href="css/m_sub01.css" media="screen and (max-width: 1200px)">
+    <script src="js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="header_top">
+            <div class="header_top_inner">
+                <ul class="left">
+                    <li><a href="https://www.nfm.go.kr/paju/" target="_blank">파주관</a></li>
+                    <li><a href="https://www.nfm.go.kr/kids/" target="_blank">어린이박물관</a></li>
+                    <li><a href="https://folkency.nfm.go.kr/main" target="_blank">한국민속대백과사전</a></li>
+                    <li><a href="https://efw.nfm.go.kr/" target="_blank">민속현장조사</a></li>
+                    <li><a href="https://www.ijih.org/" target="_blank">국제저널 무형유산</a></li>
+                </ul>
+                <ul class="right">
+                    <li class="sns">
+                        <ul>
+                            <li>
+                                <a href="#" class="insta"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="youtube"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="blog"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="twitter"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="lang">
+                        <p>Language</p>
+                        <ul class="lang_inner">
+                            <li><a href="#">ENGLISH</a></li>
+                            <li><a href="#">中文</a></li>
+                            <li><a href="#">日本語</a></li>
+                        </ul>
+                    </li>
+                    <li class="search">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <button class="btn_search"></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- //topheader
+         header -->
+        <div class="headerWrap">
+            <div class="header">
+                <div class="logo">
+                    <a href="#">
+                        <h1 class="blind">국립민속박물관</h1>
+                    </a>
+                </div>
+                <ul class="gnb">
+                    <li>
+                        <a href="sub01_info.html">관람안내 &middot; 예약</a>
+                        <ul class="depth">
+                            <li><a href="sub01_info.html">본관</a></li>
+                            <li><a href="#">어린이박물관</a></li>
+                            <li><a href="#">파주관</a></li>
+                            <li><a href="#">박물관 소개</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub02_exhibition.html">전시</a>
+                        <ul class="depth">
+                            <li><a href="sub02_exhibition.html">본관 전시</a></li>
+                            <li><a href="#">파주관 전시</a></li>
+                            <li class="gosite"><a
+                                    href="https://www.nfm.go.kr/kids/nfmkid/show/view1.do?shType=P&shLang=KR&shActive=1"
+                                    target="_blank">어린이박물관 전시</a></li>
+                            <li><a href="#">교류 전시</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub03_event.html">교육 &middot; 행사</a>
+                        <ul class="depth">
+                            <li><a href="sub03_event.html">교육안내 &middot; 신청</a></li>
+                            <li><a href="#">교육자료</a></li>
+                            <li><a href="#">행사 및 공연</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">소장자료</a>
+                        <ul class="depth">
+                            <li><a href="#">소장품</a></li>
+                            <li><a href="#">민속아카이브</a></li>
+                            <li><a href="#">도서자료실</a></li>
+                            <li><a href="#">기증</a></li>
+                            <li><a href="#">열람 &middot; 복제 &middot; 매도</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">학술 &middot; 정보</a>
+                        <ul class="depth">
+                            <li class="gosite"><a href="https://folkency.nfm.go.kr/main" target="_blank">한국민속대백과사전</a>
+                            </li>
+                            <li class="gosite"><a href="https://efw.nfm.go.kr/" target="_blank">민속현장조사</a></li>
+                            <li class="gosite"><a href="https://www.ijih.org/" target="_blank">국제저널무형유산</a></li>
+                            <li><a href="#">발간자료 검색</a></li>
+                            <li><a href="#">학술세미나</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">소식</a>
+                        <ul class="depth">
+                            <li><a href="#">알림 &middot; 공고</a></li>
+                            <li class="gosite"><a href="https://webzine.nfm.go.kr/" target="_blank">웹진</a></li>
+                            <li><a href="#">전자민원</a></li>
+                            <li><a href="#">정보공개</a></li>
+                            <li><a href="#">법령, 규정 등</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">디지털 박물관</a>
+                        <ul class="depth">
+                            <li><a href="#">VR &middot; 온라인 전시</a></li>
+                            <li><a href="#">영상채널</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="mobile_btn">
+                    <div class="m_search_wrap">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <button class="m_btn_search"></button>
+                        <button class="m_btn_close"></button>
+                    </div>
+                    <a href="#" class="m_menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- //header
+         page -->
+        <div id="pageWrapper">
+            <div class="pageInner">
+                <div class="lnb">
+                    <div class="lnb_title">
+                        <h4>관람안내 &middot; 예약</h4>
+                    </div>
+                    <ul class="lnb_depth1 on">
+                        <li>
+                            <a href="#">본관</a>
+                            <ul class="lnb_depth2 on">
+                                <li><a href="#">관람안내</a></li>
+                            </ul>
+                        </li>
+                    </ul><!-- //depth1 -->
+                    <ul class="lnb_depth1">
+                        <li>
+                            <a href="#">어린이박물관</a>
+                            <ul class="lnb_depth2">
+                                <li><a href="#">관람안내</a></li>
+                                <li class="gosite"><a href="#">전시관람 예약</a></li>
+                            </ul>
+                        </li>
+                    </ul><!-- //depth1 -->
+                    <ul class="lnb_depth1">
+                        <li>
+                            <a href="#">파주관</a>
+                            <ul class="lnb_depth2">
+                                <li><a href="#">관람안내</a></li>
+                                <li class="gosite"><a href="#">전시관람 예약</a></li>
+                            </ul>
+                        </li>
+                    </ul><!-- //depth1 -->
+                    <ul class="lnb_depth1">
+                        <li>
+                            <a href="#">박물관 소개</a>
+                            <ul class="lnb_depth2">
+                                <li><a href="#">비전과 전략</a></li>
+                                <li><a href="#">박물관 연혁</a></li>
+                                <li><a href="#">부서 및 직원안내</a></li>
+                                <li><a href="#">민속연보</a></li>
+                                <li><a href="#">국립민속박물관 MI</a></li>
+                            </ul>
+                        </li>
+                    </ul><!-- //depth1 -->
+                </div>
+                <div class="contents">
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="#"><img src="img/ico/ic_home.png" alt=""></a></li>
+                            <li><a href="#">관람안내 &middot; 예약</a></li>
+                            <li><a href="#">본관</a></li>
+                            <li><a href="#">관람안내</a></li>
+                        </ul>
+                    </div><!-- //breadcrumb -->
+                    <div class="cont_title">
+                        <h3>관람안내</h3>
+                        <div class="ico">
+                            <figure><img src="img/ico/ic_share.png" alt=""></figure>
+                            <figure><img src="img/ico/ic_print.png" alt=""></figure>
+                        </div>
+                    </div>
+                    <div class="resv">
+                        <div class="resvInner">
+                            <img src="img/ico/ic_booking.png" alt="">
+                            <p>사전예약 없이 관람하실 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <!-- 관람안내 -->
+                    <section id="info">
+                        <div class="sect_title">
+                            <h3>관람안내</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <h5>관람시간</h5>
+                                <figure><img src="img/ico/ic_time.png" alt=""></figure>
+                                <p>3월~10월: 09:00~18:00</p>
+                                <p>11월~2월: 09:00~17:00</p>
+                                <strong>입장마감: 관람 종료 1시간 전까지</strong>
+                            </li>
+                            <li>
+                                <h5>야간연장개관</h5>
+                                <figure><img src="img/ico/ic_night.png" alt=""></figure>
+                                <p>3월~10월: 매주 토요일 <br>
+                                    09:00~20:00</p>
+                                <p>11월~2월: 야간연장 미운영</p>
+                            </li>
+                            <li>
+                                <h5>휴관일</h5>
+                                <figure><img src="img/ico/ic_holiday.png" alt=""></figure>
+                                <p>매년 1월 1일,<br>
+                                    설 당일(2024.2.10),<br>
+                                    추석 당일(2024.9.17)</p>
+                            </li>
+                            <li>
+                                <h5>입장료(관람료)</h5>
+                                <figure><img src="img/ico/ic_money.png" alt=""></figure>
+                                <p>무료</p>
+                                <em>※ 경복궁 관람은 유료</em>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- //관람안내
+                      전시해설 -->
+                    <section id="commentary">
+                        <div class="sect_title">
+                            <h3>전시해설</h3>
+                        </div>
+                        <div class="comm title first">
+                            <strong>정기해설</strong>
+                        </div>
+                        <div class="comm cont">
+                            <ul>
+                                <li>모이는 곳: 본관 1층 로비 안내데스크</li>
+                                <li>이용요금: 무료</li>
+                                <li>접수방법: 별도 접수 없음(현장접수)
+                                    <em>※ 10인 이상 단체일 경우 반드시 예약 문의 바랍니다.</em>
+                                </li>
+                                <li class='bg_none'>
+                                    제공언어
+                                    <em>※ 외국어 해설은 외국인 관람객 대상으로 운영합니다.</em>
+                                    <ul class="language">
+                                        <li>
+                                            <ul>
+                                                <li><strong>한국어</strong></li>
+                                                <li>
+                                                    월~금
+                                                    <p class="time">10:00 11:00 14:00 15:00</p>
+                                                </li>
+                                                <li>
+                                                    주말 및 공휴일
+                                                    <p class="time">10:00 14:00</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li><strong>영어</strong></li>
+                                                <li>
+                                                    월, 수, 금
+                                                    <p class="time">10:30 14:30</p>
+                                                </li>
+                                                <li>
+                                                    목, 일
+                                                    <p class="time">10:30</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li><strong>일본어</strong></li>
+                                                <li>
+                                                    월, 화, 목
+                                                    <p class="time">11:00 15:00</p>
+                                                </li>
+                                                <li>
+                                                    토, 일
+                                                    <p class="time">11:00</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li><strong>중국어</strong></li>
+                                                <li>
+                                                    월
+                                                    <p class="time">10:30</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul> <!-- //language -->
+                                </li>
+                                <li class='bg_none'>전시해설 문의: 02-3704-3129 (월~금 09:00~12:00, 13:00~18:00)
+                                    <em>※ 상업적 목적을 가지고 운영되는 해설 단체는 본 프로그램을 이용하실 수 없습니다.</em>
+                                    <em>※ 박물관 사정에 따라 전시해설 운영에 변동이 있을 수 있습니다.</em>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="comm title">
+                            <strong>예약해설</strong>
+                        </div>
+                        <div class="comm cont">
+                            <ul>
+                                <li>모이는 곳: 본관 1층 로비 안내데스크</li>
+                                <li>이용요금: 무료</li>
+                                <li>참여정원: 10인 이상 단체(사전 협의 필수)</li>
+                                <li class='bg_none'>
+                                    제공언어
+                                    <em>※ 외국어 해설은 외국인 관람객 대상으로 운영합니다.</em>
+                                    <ul class="language">
+                                        <li>한국어</li>
+                                        <li>영어</li>
+                                        <li>일본어</li>
+                                        <li>중국어</li>
+                                    </ul> <!-- //language -->
+                                </li>
+                                <li>접수방법: 전화접수 02-3704-3129 평일(월~금) 09:00~12:00, 13:00~18:00</li>
+                                <li>신청기한: 해설 희망일 3일 전까지</li>
+                                <li class='bg_none'>전시해설 문의: 02-3704-3129 (월~금 09:00~12:00, 13:00~18:00)
+                                    <em>※ 상업적 목적을 가지고 운영되는 해설 단체는 본 프로그램을 이용하실 수 없습니다.</em>
+                                    <em>※ 박물관 사정에 따라 전시해설 운영에 변동이 있을 수 있습니다.</em>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="comm title">
+                            <strong>다국어 음성 자동 안내기(※잠정중단)</strong>
+                        </div>
+                        <div class="comm cont">
+                            <ul>
+                                <li class="bg_none"><em>※ 코로나바이러스감염증-19 확산 방지 및 감염 예방을 위해 잠정 중단합니다.</em></li>
+                                <li>세계인 누구든지! 외국인 친구와 함께 오세요 국어 · 영어 · 일어 · 중국어의 다양한 언어 설명이 가능합니다.</li>
+                                <li>내 맘대로 조정하자! 자동 및 수동 겸용 방식입니다. 전시물의 배치 순서와 이동 동선에 따라 자동 및 수동 모드로 전환이 가능하여 전시실내의 공간에
+                                    제약 없이 올바른 안내를 받을 수 있습니다.</li>
+                                <li>세계인 누구든지! 외국인 친구와 함께 오세요. 이용시 신분증(여권) 등 지참 필수 ☎ 02) 3704 - 3066</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- //전시해설
+                     편의시설 -->
+                    <section id="amenity">
+                        <div class="sect_title">
+                            <h3>편의시설</h3>
+                        </div>
+                        <div class="ame title">
+                            <strong>유아차, 휠체어(무료 대여)</strong>
+                        </div>
+                        <div class="ame cont">
+                            <ul>
+                                <li>유아차: 본관 주 출입구 쪽 안내데스크(생후 24개월 이하 유아 대상)</li>
+                                <li>휠체어: 본관 기획전시실1 옆 안내데스크
+                                    <em>※ 대여 유아차, 휠체어는 박물관 실내에서만 사용 가능</em>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ame title">
+                            <strong>도서자료실</strong>
+                        </div>
+                        <div class="ame cont">
+                            <div class="contInner">
+                                <img src="img/img_guide01.jpg" alt="">
+                                <ul>
+                                    <li>국내외 민속학 및 세계민속 관련 도서자료를 보실 수 있습니다.</li>
+                                    <li><a href="#"><button>이용안내 바로가기</button></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ame title">
+                            <strong>뮤지엄샵</strong>
+                        </div>
+                        <div class="ame cont">
+                            <div class="contInner">
+                                <img src="img/img_guide02.jpg" alt="">
+                                <ul>
+                                    <li>전통문화의 새로운 전승과 한국적 이미지를 담은 국제적으로 경쟁력있는 문화상품을 연구·개발하고 있습니다. <br>
+                                        (문의: 02-739-9691)</li>
+                                    <li><a href="#"><button>뮤지엄샵 바로가기</button></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ame title">
+                            <strong>카페</strong>
+                        </div>
+                        <div class="ame cont">
+                            <div class="contInner">
+                                <img src="img/img_guide03.jpg" alt="">
+                                <ul>
+                                    <li>음료와 간단한 먹거리를 판매하고 있습니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- //편의시설
+                      지도 -->
+                    <section id="location">
+                        <div class="sect_title">
+                            <h3>지도</h3>
+                        </div>
+                        <div class="loc title">
+                            <strong>관내 지도</strong>
+                        </div>
+                        <div class="loc cont">
+                            <img src="img/map.jpg" alt="">
+                        </div>
+                        <div class="loc title">
+                            <strong>찾아오시는 길</strong>
+                        </div>
+                        <div class="loc cont">
+                            <div class="contInner">
+                                <div class="mapImg">
+                                    <figure><img src="img/i-map_3.png" alt=""></figure>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <strong class="orange">3호선 안국역</strong>
+                                                <p>1번 출구</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong class="orange">3호선 경복궁역</strong>
+                                                <p>5번 출구</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <strong class="purple">5호선 광화문역</strong>
+                                                <p>2번 출구</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <p>버스</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <p>마을버스</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <p>자동차</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div> <!-- //mapImg -->
+                                <div class="mapInfo">
+                                    <ul>
+                                        <li>※ 원하는 교통수단을 클릭하시면 진행방향을 보실 수 있습니다.</li>
+                                        <li class="mapico location">주소: (03045) 서울시 종로구 삼청로 37</li>
+                                        <li class="mapico tel">전화: 02-3704-3114</li>
+                                    </ul>
+                                </div><!-- //mapInfo -->
+                            </div>
+                            <div class="mapDetail">
+                                <ul>
+                                    <li class="det subway">
+                                        <div class="title">
+                                            <figure>
+                                                <img src="img/ico/ic_subway.png" alt="">
+                                            </figure>
+                                            <strong>지하철이용</strong>
+                                        </div>
+                                        <div class="detail">
+                                            <p>
+                                                <span class="orange">3</span>호선 <br>
+                                                안국역 1번 출입구: 직진하여 안국동사거리를 지나 동십 자각까지 오신 후 오른쪽 삼청동길을 따라 400미터쯤 걸어오시면 왼쪽에
+                                                국립민속박물관 정문이 보입니다.
+                                                (걸어서 약 15분 걸림)
+                                            </p>
+                                            <p>
+                                                <span class="purple">5</span>호선
+                                                광화문역 2번 출입구: 직진하여 미대사관을 지나 광화문 공원을 따라 오른쪽 길로 오시다가 지하도를 건너서 삼청동길을 따라
+                                                400미터쯤 걸어오시면 왼쪽에 국립민속 박물관 정문이 보입니다.
+                                                (걸어서 약 17분 걸림)
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="det bus">
+                                        <div class="title">
+                                            <figure>
+                                                <img src="img/ico/ic_bus.png" alt="">
+                                            </figure>
+                                            <strong>버스이용</strong>
+                                        </div>
+                                        <div class="detail">
+                                            <span class="blue">간선버스 (파랑버스)</span>
+                                            <p>109, 151, 162, 171, 172, 272, 401, 406, 601, 606, 704</p>
+                                            <span class="green">지선버스 (녹색버스)</span>
+                                            <p>1020, 1711, 7016, 7018, 7022, 7025, 7212</p>
+                                            <span class="brown">순환버스 (시티투어버스)</span>
+                                            <p>90S투어, 91S투어</p>
+                                            <span class="brown">11번 마을버스(삼청교통) 이용</span>
+                                            <p>서울역 역전우체국(1호선,4호선) → 남대문(외환 은행) → 시청역(1호선, 2호선) → 프레스센터 → 광화문역(한국통신) →
+                                                경복궁(법련사) → 국립민속박물관(정독도서관) 하차</p>
+                                        </div>
+
+                                    </li>
+                                    <li class="det car">
+                                        <div class="title">
+                                            <figure>
+                                                <img src="img/ico/ic_car.png" alt="">
+                                            </figure>
+                                            <strong>지하철이용</strong>
+                                        </div>
+                                        <div class="detail">
+                                            <p>경복궁 주차장 이용</p>
+                                            <p>
+                                                박물관 내에 주차장이 없습니다. 경복궁 주차장(유료)을 이용하시기 바랍니다. 경복궁 주차장에 주차 후 왼쪽 돌담길을 따라
+                                                330미터쯤 올라오시면 국립민속박물관 정문이 보입니다. (걸어서 약 5분 소요)
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="det parking">
+                                        <div class="title">
+                                            <figure>
+                                                <img src="img/ico/ic_parking.png" alt="">
+                                            </figure>
+                                            <strong>주차안내</strong>
+                                        </div>
+                                        <div class="detail">
+                                            <p>
+                                                박물관 내에 주차장이 없습니다. 인근 주차장을 이용하시거나 대중교통을 이용하시기 바랍니다.
+                                                경복궁 주차장 이용안내: 주차 후 왼쪽 돌담길을 따라 330미터쯤 올라오시면 국립민속박물관 정문이 보입니다. (걸어서 약 5분
+                                                소요)
+                                            </p>
+                                        </div>
+                                        <a href="#"><button>경복궁 주차장 안내 바로가기</button></a>
+                                    </li>
+                                </ul>
+                            </div><!-- //mapDetail -->
+                        </div>
+                    </section>
+                    <!-- //지도
+                       note -->
+                    <section id="note">
+                        <div class="nt title">
+                            <p>관람 시 유의사항</p>
+                        </div>
+                        <div class="nt cont">
+                            <ul class="inner">
+                                <li>
+                                    <img src="img/ico/ic_point02.png" alt="">
+                                    <p>박물관의 모든 공간에서는 금연입니다.</p>
+                                </li>
+                                <li>
+                                    <img src="img/ico/ic_point03.png" alt="">
+                                    <p>음식물을 반입하면 안 됩니다.</p>
+                                </li>
+                                <li>
+                                    <img src="img/ico/ic_point04.png" alt="">
+                                    <p>안내견 이외의 애완동물은 출입할 수 없습니다.</p>
+                                </li>
+                                <li>
+                                    <img src="img/ico/ic_point05.png" alt="">
+                                    <p>전시실 입장 전에, 휴대전화는 전원을 꺼주시거나 진동으로 전환하여 주십시오.</p>
+                                </li>
+                                <li>
+                                    <img src="img/ico/ic_point06.png" alt="">
+                                    <p>전시물에 손을 대거나 손상을 입힐 수 있는 행위는 절대 삼가 주십시오.</p>
+                                </li>
+                                <li>
+                                    <img src="img/ico/ic_point07.png" alt="">
+                                    <p>플래시/삼각대 등을 이용한 촬영과 상업적 용도를 위한 촬영은 금지되어 있습니다.</p>
+                                </li>
+                                <li>
+                                    <img src="img/ico/ic_point08.png" alt="">
+                                    <p>박물관 실내·외에서는 자전거, 킥보드, 인라인스케이트, 브레이드 등을 이용할 수 없습니다.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nt title">
+                            <p>시설현황(건물면적)</p>
+                        </div>
+                        <div class="nt cont">
+                            <table>
+                                <caption>시설현황(건물면적) 표 - 구분, 면적</caption>
+                                <colgroup>
+                                <col style="width: 15%">
+                                <col style="width: 15%">
+                                <col style="width: 30%">
+                                <col style="width: 40%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th colspan="3">구분</th>
+                                    <th colspan="3">면적</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th colspan="3">대지</th>
+                                    <td style="background: #fff;"><strong>39,626㎡</strong></td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="12">건물</th>
+                                    <th colspan="2">본관</th>
+                                    <td style="background: #fff;"><strong>18,145㎡</strong></td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="10">부속동</th>
+                                    <th style="background: #fff;">볕들재</th>
+                                    <td style="background: #fff;">655㎡</td>
+                                </tr>
+                                <tr>
+                                    <th style="background: #fff;">전통문화배움터</th>
+                                    <td style="background: #fff;">261㎡</td>
+                                </tr>
+                                <tr>
+                                    <th style="background: #fff;">옥외화장실(배움터)</th>
+                                    <td style="background: #fff;">36㎡</td>
+                                </tr>
+                                <tr>
+                                    <th style="background: #fff;">직원식당</th>
+                                    <td style="background: #fff;">180㎡</td>
+                                </tr>
+                                <tr>
+                                    <th style="background: #fff;">청원경찰실</th>
+                                    <td style="background: #fff;">8㎡</td>
+                                </tr>
+                                <tr>
+                                    <th style="background: #fff;">보존과학실</th>
+                                    <td style="background: #fff;">718㎡</td>
+                                </tr>
+                                <tr>
+                                    <th style="background: #fff;">정문안내소</th>
+                                    <td style="background: #fff;">29㎡</td>
+                                </tr>
+                                <tr>
+                                    <th style="background: #fff;">청사관리원실</th>
+                                    <td style="background: #fff;">43㎡</td>
+                                </tr>
+                                <tr>
+                                    <th style="background: #fff;">미화원대기실</th>
+                                    <td style="background: #fff;">120㎡</td>
+                                </tr>
+                                <tr>
+                                    <th>소계</th>
+                                    <td style="background: #fff;"><strong>2,050㎡</strong></td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">계</th>
+                                    <td style="background: #fff;">20,195㎡</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div><!-- //nt cont -->
+                        <div class="nt title">
+                            <p>시설물 대관 안내</p>
+                        </div>
+                        <div class="nt cont">
+                            <h6>대관시설현황</h6>
+                            <table class="table2">
+                                <caption>대관시설현황 - 구분, 면적, 좌석수, 제공시설, 대관료, 비고</caption>
+                                <colgroup>
+                                <col style="width: 13%">
+                                <col style="width: 13%">
+                                <col style="width: 20%">
+                                <col style="width: 21%">
+                                <col style="width: 20%">
+                                <col style="width: 13%">
+                                </colgroup>
+                                <thead>
+                                    <th>구분</th>
+                                    <th>면접</th>
+                                    <th>좌석수</th>
+                                    <th>제공 시설</th>
+                                    <th>대관료</th>
+                                    <th>비고</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>강당</td>
+                                        <td>456.96㎡</td>
+                                        <td>
+                                            <ul>
+                                                <li class="bold">좌석수: 200석</li>
+                                                <li>
+                                                    <ul class="inner">
+                                                        <li>고정식: 186석</li>
+                                                        <li>이동식: 12석</li>
+                                                        <li>장애인: 2석</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td>빔프로젝터 및 A/V 장비 등</td>
+                                        <td>
+                                            <ul>
+                                                <li>1시간: 32,760원</li>
+                                                <li>1일: 259,490원</li>
+                                            </ul>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h6>대관절차</h6>
+                            <ul class="numList">
+                                <li>1. 대관일 예약 일정 확인(대관 담당자 문의)</li>
+                                <li>2. 대관신청: 대관일 15일 전까지 대관신청서 및 행사계획서 첨부하여 공문 제출</li>
+                                <li>3. 대관신청서 검토 후 승인 통보: 신청일로부터 7일 이내</li>
+                                <li>4. 대관료 납부고지서 발송</li>
+                                <li>5. 대관료 납부고지서 발송</li>
+                                <li>6. 대관공간 사용 및 원상복구</li>
+                            </ul>
+                            <div class="btn_down">
+                                <a href="#"><button>시설사용신청서 (hwp)</button></a>
+                                <a href="#"><button>시설사용신청서 (pdf)</button></a>
+                                <a href="#"><button>시설대관 변경신청서 (hwp)</button></a>
+                                <a href="#"><button>시설대관 변경신청서 (pdf)</button></a>
+                            </div>
+                            <h6>대관문의</h6>
+                            <ul>
+                                <li>민속기획과 왕민아 02-3704-3042 wangmina@korea.kr</li>
+                            </ul>
+                            <h6>대관료 반환</h6>
+                            <ul>
+                                <li>「국립민속박물관 대관 규정」 참고</li>
+                            </ul>
+                            <h6>이용자 준수사항</h6>
+                            <ul class="numList">
+                                <li>1. 사용자는 대관 목적 이외의 행사를 하여서는 아니된다.</li>
+                                <li>2. 사용자는 대관받은 범위내의 시설만 사용하여야 한다.</li>
+                                <li>3. 행사에 수반되는 물품반입, 설치, 철거시는 박물관 직원의 지시에 따라야 한다.</li>
+                                <li>4. 박물관 부속시설인 앰프, 마이크, VTR 등 시청각기자재를 사용하고자 할 때는 관계직원의 협조하에 동 시설을 사용하여야 한다.</li>
+                                <li>5. 사용중 항상 청결을 유지하여야 한다.</li>
+                                <li>6. 사용후에는 모든 시설을 원상대로 회복하여야 하며, 시설물에 피해가 있는 경우에는 박물관이 정한 기준에 의거 손해를 배상하여야 한다.</li>
+                            </ul>
+                            <h6>대관시설 사진</h6>
+                            <div class="imgWrap">
+                                <div class="hall">
+                                    <img src="img/img_hall01.jpg" alt="">
+                                    <p>강당입구</p>
+                                </div>
+                                <div class="hall">
+                                    <img src="img/img_hall02.jpg" alt="">
+                                    <p>강당내부</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div><!-- //contents -->
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="f_top">
+                <div class="f_top_inner">
+                    <ul class="category">
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">영상정보처리기기 운영·관리 방침</a></li>
+                        <li><a href="#">저작권정책</a></li>
+                        <li><a href="#">RSS</a></li>
+                        <li><a href="#">누리집 지도</a></li>
+                        <li><a href="#">민속생활사박물관 협력망사업</a></li>
+                    </ul>
+                    <div class="sitemap">
+                        <button>관련사이트</button>
+                        <ul>
+                            <li><a href="#">국립민속박물관 파주</a></li>
+                            <li><a href="#">어린이박물관</a></li>
+                            <li><a href="#">한국민속대백과사전</a></li>
+                            <li><a href="#">민속현장조사</a></li>
+                            <li><a href="#">한국문화상자</a></li>
+                            <li><a href="#">국제저널무형유산</a></li>
+                            <li><a href="#">국립민속박물관회</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="f_btm">
+                <div class="f_btm_inner">
+                    <a href="index.html"><img src="img/ico//f_logo.png" alt=""></a>
+                    <ul class="info">
+                        <li>본관 [03045] 서울시 종로구 삼청로 37 TEL 02-3704-3114</li>
+                        <li>파주관 [10859] 경기도 파주시 탄현면 헤이리로 30 TEL 031-580-5800~1</li>
+                        <li>Copyright © 국립민속박물관. All Rights Reserved</li>
+                    </ul>
+                    <div class="logo">
+                        <a href="#"><img src="img/ico/l-mark_image_wa_2024.png" alt=""></a>
+                        <a href="#"><img src="img/ico/l-mark__image--open.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </footer><!-- //footer -->
+    </div><!-- //wrapper -->
+
+
+
+
+
+    <script src="js/sub.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>

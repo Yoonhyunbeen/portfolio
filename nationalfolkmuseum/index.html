@@ -7,7 +7,7 @@
     <title>국립민속박물관</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/m_main.css" media="screen and (max-width: 1201px)">
+    <link rel="stylesheet" href="css/m_main.css" media="screen and (max-width: 1200px)">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="js/jquery-3.7.1.min.js"></script>
 </head>
@@ -58,6 +58,8 @@
                 </ul>
             </div>
         </div>
+        <!-- //topheader
+         header -->
         <div class="headerWrap">
             <div class="header">
                 <div class="logo">
@@ -147,9 +149,16 @@
                 </div>
             </div>
         </div>
+        <!-- //header
+         main_video -->
         <div class="main_video">
-            <video src="img/mainvideo_pc.mp4" muted autoplay playsinline></video>
+            <video id="responsiveVideo" muted autoplay playsinline>
+                <source id="videoSource" src="img/mainvideo_pc.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
+        <!-- //main_video
+         news -->
         <div class="news">
             <div class="newsWrap">
                 <p class="newTitle">새소식</p>
@@ -175,6 +184,8 @@
                 <a href="#" class="viewMore"><button>더보기</button></a>
             </div>
         </div>
+        <!-- //news
+         museum -->
         <div class="museum">
             <a href="sub01_info.html" class="imgWrap main">
                 <figure><img src="img/main_museum_01.jpg" alt="본관"></figure>
@@ -199,6 +210,8 @@
                 </div>
             </a>
         </div>
+        <!-- //museum
+         exhibition -->
         <div class="exhibition">
             <div class="title">
                 <h2>전시</h2>
@@ -316,6 +329,8 @@
                 </div>
             </div>
         </div>
+        <!-- //exhibition
+         education -->
         <div class="education">
             <div class="title">
                 <h2>교육</h2>
@@ -436,8 +451,9 @@
                     </div>
                 </div>
             </div>
-
         </div>
+        <!-- //educaton
+         event -->
         <div class="event">
             <a href="https://www.e-gen.or.kr/egen/holiday_medical.do?emergencyViewYn=Y" class="imgWrap"
                 title="응급의료포털 새 창 열림" target="_blank"><img src="img/info.jpg" alt=""></a>
@@ -447,6 +463,8 @@
                 <li><a href="#">세시풍속행사</a></li>
             </ul>
         </div>
+        <!-- //event
+         contents -->
         <div class="contents">
             <div class="title">
                 <h2>자주 찾는 콘텐츠</h2>
@@ -528,37 +546,41 @@
         </div>
         <footer>
             <div class="f_top">
-                <ul class="category">
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">영상정보처리기기 운영·관리 방침</a></li>
-                    <li><a href="#">저작권정책</a></li>
-                    <li><a href="#">RSS</a></li>
-                    <li><a href="#">누리집 지도</a></li>
-                    <li><a href="#">민속생활사박물관 협력망사업</a></li>
-                </ul>
-                <div class="sitemap">
-                    <button>관련사이트</button>
-                    <ul>
-                        <li><a href="#">국립민속박물관 파주</a></li>
-                        <li><a href="#">어린이박물관</a></li>
-                        <li><a href="#">한국민속대백과사전</a></li>
-                        <li><a href="#">민속현장조사</a></li>
-                        <li><a href="#">한국문화상자</a></li>
-                        <li><a href="#">국제저널무형유산</a></li>
-                        <li><a href="#">국립민속박물관회</a></li>
+                <div class="f_top_inner">
+                    <ul class="category">
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">영상정보처리기기 운영·관리 방침</a></li>
+                        <li><a href="#">저작권정책</a></li>
+                        <li><a href="#">RSS</a></li>
+                        <li><a href="#">누리집 지도</a></li>
+                        <li><a href="#">민속생활사박물관 협력망사업</a></li>
                     </ul>
+                    <div class="sitemap">
+                        <button>관련사이트</button>
+                        <ul>
+                            <li><a href="#">국립민속박물관 파주</a></li>
+                            <li><a href="#">어린이박물관</a></li>
+                            <li><a href="#">한국민속대백과사전</a></li>
+                            <li><a href="#">민속현장조사</a></li>
+                            <li><a href="#">한국문화상자</a></li>
+                            <li><a href="#">국제저널무형유산</a></li>
+                            <li><a href="#">국립민속박물관회</a></li>
+                        </ul>
+                </div>
                 </div>
             </div>
             <div class="f_btm">
-                <a href="index.html"><img src="img/ico//f_logo.png" alt=""></a>
-                <ul class="info">
-                    <li>본관 [03045] 서울시 종로구 삼청로 37 TEL 02-3704-3114</li>
-                    <li>파주관 [10859] 경기도 파주시 탄현면 헤이리로 30 TEL 031-580-5800~1</li>
-                    <li>Copyright © 국립민속박물관. All Rights Reserved</li>
-                </ul>
-                <div class="logo">
-                    <a href="#"><img src="img/ico/l-mark_image_wa_2024.png" alt=""></a>
-                    <a href="#"><img src="img/ico/l-mark__image--open.png" alt=""></a>
+                <div class="f_btm_inner">
+                    <a href="index.html"><img src="img/ico//f_logo.png" alt=""></a>
+                    <ul class="info">
+                        <li>본관 [03045] 서울시 종로구 삼청로 37 TEL 02-3704-3114</li>
+                        <li>파주관 [10859] 경기도 파주시 탄현면 헤이리로 30 TEL 031-580-5800~1</li>
+                        <li>Copyright © 국립민속박물관. All Rights Reserved</li>
+                    </ul>
+                    <div class="logo">
+                        <a href="#"><img src="img/ico/l-mark_image_wa_2024.png" alt=""></a>
+                        <a href="#"><img src="img/ico/l-mark__image--open.png" alt=""></a>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -568,34 +590,61 @@
 
 
 
-    <script src="js/nationalfolkmuseum.js"></script>
+    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".exhSwiper", {
-            slidesPerView: 4,
-            spaceBetween: 30,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+                799: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+            }
         });
         var eduswiper = new Swiper(".eduSwiper", {
-            slidesPerView: 4,
-            spaceBetween: 30,
             navigation: {
                 nextEl: ".edu .swiper-button-next",
                 prevEl: ".edu .swiper-button-prev",
             },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+                799: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                599: {
+                    slidesPerView: 1,
+                },
+            }
         });
         var contswiper = new Swiper(".contSwiper", {
-            slidesPerView: 4,
-            spaceBetween: 150,
             freeMode: true,
             loop: true,
             navigation: {
                 nextEl: ".cont .swiper-button-next",
                 prevEl: ".cont .swiper-button-prev",
             },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 150,
+                },
+                799: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+            }
         });
     </script>
 </body>

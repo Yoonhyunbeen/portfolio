@@ -8,29 +8,7 @@
 .header .gnb > li{
     margin-right: 10px;
 }
-.exhibition,
-.education,
-.contents,
-footer .f_top .f_top_inner,
-.f_btm .f_btm_inner {
-    width: 95%;
-}
-.event .eventList li {
-    font-size: 1.8rem;
-    padding: 0 30px;
-}
-.event .eventList li:after {
-    width: 30px; height: 30px;
-    right: 50px;
-}
 
-.contents .contSwiper .swiper-slide a figure {
-    width: 170%; height: auto;
-    overflow: hidden;
-}
-.contents .contSwiper .swiper-slide a .title {
-    width: 160%;
-}
 .f_top_inner {position: relative;}
 .f_top_inner .category li {
     margin-right: 10px;
@@ -128,106 +106,31 @@ footer .f_top .f_top_inner,
         height: 2px; width: 100%;
         position: absolute;
     }
-    .news .newsWrap {
-        display: block;
-        position: relative;
+    .lnb {
+        display: none;
+    }
+    .contents {
         width: 95%;
-        padding: 40px 0;
     }
-    .news .newsWrap .newTitle,
-    .news .newsWrap .viewMore {
-        position: absolute;
-        top: 15px;
+    #info > ul {
+        flex-wrap: wrap;
     }
-    .news .newsWrap .viewMore {
-        right: 30px ;
+    #info > ul > li {
+        width: 48%;
+        margin-bottom: 20px;
     }
-    .newsWrap .textslidewrap {
-        top: 15px;
-    }
-    .textslidewrap .textslide {
-        overflow: hidden;
-    }
-    .textslidewrap .textslide li {
-        text-overflow: ellipsis;
-    }
-    .museum {
-        display: block;
+    #note .nt.cont > .inner > li {
         width: 100%;
-    }
-    .museum .imgWrap {
-        width: 100%;
-    }
-    .museum .imgWrap figure {
-        height: 260px;
-        margin: 0;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .museum .imgWrap figure > img {
-        width: 100%; height: auto;
-    }
-    .title h2 {
-        font-size: 2.8rem;
-    }
-    /* exhibition */
-    .exhibition .title h2:after,
-    .education .title h2:after {
-        left: 100px;
-        width: 30px; height: 30px;
-    }
-    .exhibition .swiper {
-        width: 80%;
-    }
-    .exhibition .swiper .swiper-slide {
-        width: 70% !important;
-    }
-    .exhibition .swiper .swiper-slide a .imgArea figure > img {
-        width: 100%;
-    }
-    /* education */
-    .education .edu_tab button {
-        width: 110px;
-        font-size: 1rem;
-    }
-    .education .eduSwiper .swiper-slide a {
-        height: 250px;
-    }
-    /* event */
-    .event .eventList {
-        width: 70%;
-    }
-    /* content */
-    .contents .contSwiper .swiper-slide {
-        width: 60% !important;
-    }
-    .contents .contSwiper .swiper-slide a figure {
-        width: 100%;
-    }
-    .contents .contSwiper .swiper-slide a .title {
-        width: 60%;
     }
 }
     /*----- mobile ~800px */
 @media screen and (max-width: 800px) {
-    .event {
-         display: block;
+    section .cont > ul > li > .language {
+        display: block;
     }
-    .event .eventList {
+    section .cont > ul > li > .language > li {
         width: 100%;
-    }
-    .event .eventList li {
-        padding: 70px 50px;
-        box-sizing: border-box;
-    }
-    .education .eduSwiper .swiper-slide {
-        width: 45% !important;
-    }
-    .contents .contSwiper .swiper-slide {
-        margin-right: 30px;
+        margin-bottom: 20px;
     }
     footer .f_top {
         border: none;
@@ -275,7 +178,9 @@ footer .f_top .f_top_inner,
 }
  /*----- mobile ~600px */
  @media screen and (max-width: 600px) {
-    .education .eduSwiper .swiper-slide {
-        width: 100% !important;
+    #info > ul > li {
+        width: 100%;
+        margin-bottom: 20px;
     }
+
 }

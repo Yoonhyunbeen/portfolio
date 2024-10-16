@@ -1,6 +1,4 @@
 @charset "utf-8";
-@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
-/*  font-family: 'Spoqa Han Sans Neo', 'sans-serif'; */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* font-family: "Montserrat", sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -10,13 +8,10 @@ body {
     margin: 0 auto;
     padding: 0;
     background: #FAFAFA;
-    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-   /*  cursor: url(../img/cursor.png), auto; */
+    font-family: 'KoPub Dotum', 'sans-serif';
     word-break: keep-all;
 }
-/* li > a, button, a {
-    cursor: url(../img/pointer.png), pointer;
-} */
+
 /* header */
 header {
     display: flex;
@@ -177,7 +172,7 @@ header .gnb li:hover:before {
 }
 
 #about ul {
-    width: 45%;
+    width: 50%;
     position: absolute;
     top: 50%; right: 0;
     transform: translateY(-50%);
@@ -186,6 +181,10 @@ header .gnb li:hover:before {
 #about ul li {
     margin-bottom: 50px;
     line-height: 1.8;
+}
+#about ul li .bold {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.9);
 }
 
 #about ul li:last-child {
@@ -310,7 +309,7 @@ h3:before {
 #project #contwrap_web .content .text .page {
     font-weight: 400;
     display: block;
-    margin: 10px 0 20px;
+    margin: 20px 0 20px;
     color: rgba(0, 0, 0, 0.6);
 }
 #project #contwrap_web .content .text .page > a {

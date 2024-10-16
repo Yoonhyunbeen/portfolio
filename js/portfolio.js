@@ -17,7 +17,7 @@ $(document).ready(function() {
 
     //main text animation
     $('.title span').each(function(index) {
-        $(this).delay(100 * index).fadeIn(300, function() {
+        $(this).delay(80 * index).fadeIn(300, function() {
             if (index === $('.title span').length - 1) {
                 $('.maintxt').addClass('visible');
             }
