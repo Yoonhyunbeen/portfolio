@@ -54,6 +54,9 @@ h3 {
 }
 /* project */
 #project {padding-top: 200px;}
+#project #contwrap_web {
+    margin-top: 200px;
+}
 #project #contwrap_web .content {
     display: block;
     width: 100%;
@@ -178,6 +181,9 @@ footer {
         text-align: center;
     }
     #about ul li > h1 {font-size: 20px;}
+    #about ul li > p {
+        font-size: 18px;
+    }
     #project {
         padding-top: 350px;
     }
