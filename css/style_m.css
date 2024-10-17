@@ -180,7 +180,9 @@ footer {
     #about ul li > h1 {font-size: 20px;}
     #project {
         padding-top: 350px;
-        margin-top: 350px;
+    }
+    #project #contwrap_web {
+        margin-top: 200px;
     }
     #project #contwrap_web .content .imgarea > a img {
         width: 100%;
