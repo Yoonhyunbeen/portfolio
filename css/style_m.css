@@ -196,6 +196,7 @@ footer {
     }
     #project #contwrap_web .content .text {
         width: 100%;
+        text-align: center;
     }
     #project #contwrap_web .content .text > p {
         width: 100%;
@@ -208,6 +209,7 @@ footer {
         position: static;
         display: flex;
         top: 0; right: 0;
+        margin: 0 auto;
     }
     #project #contwrap_web .content .text .btnarea > button {
         display: block;
@@ -224,6 +226,9 @@ footer {
     #project #contwrap_design .design_muse > .textarea {
         width: 100%;
         display: block;
+    }
+    #project #contwrap_design .design_muse > .textarea .text {
+        text-align: center;
     }
     #project #contwrap_design .design_muse .btnarea > button {
         width: 45%;
